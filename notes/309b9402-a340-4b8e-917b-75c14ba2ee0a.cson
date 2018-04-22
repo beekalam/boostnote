@@ -1,0 +1,29 @@
+createdAt: "2018-04-03T06:30:34.221Z"
+updatedAt: "2018-04-03T06:31:44.241Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "ms sql server"
+content: '''
+  # ms sql server
+  
+  ## database collation
+  ```sql
+  SELECT collation_name FROM sys.databases 
+  WHERE name = 'database name';
+  ```
+  
+  ## column collation
+  You can check the version using
+  ```sql
+  SELECT @@VERSION;
+  ```
+  It it's 9.00 or greater, you can check the collation of a column using
+  ```sql
+  SELECT collation_name FROM sys.columns 
+  WHERE name = 'column name'
+  AND [object_id] = OBJECT_ID('dbo.table name');
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false

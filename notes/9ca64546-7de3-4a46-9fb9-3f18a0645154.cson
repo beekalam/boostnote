@@ -1,0 +1,25 @@
+createdAt: "2018-03-19T06:55:16.907Z"
+updatedAt: "2018-03-19T07:10:00.975Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "codeigniter"
+content: '''
+  # codeigniter
+  ## remove index.php
+  ```
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php/$1 [L]
+  ```
+  
+  ## set session save path
+  ```
+  $config['sess_cookie_name'] = 'ci_session';
+  $config['sess_save_path'] = __DIR__.'/../ci_sessions';
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

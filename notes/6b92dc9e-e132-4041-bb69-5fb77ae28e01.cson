@@ -1,0 +1,26 @@
+createdAt: "2018-04-08T10:28:04.872Z"
+updatedAt: "2018-04-08T10:39:56.589Z"
+type: "MARKDOWN_NOTE"
+folder: "554a37a8a3961e45e68d"
+title: "select2"
+content: '''
+  # select2
+  
+  ## select2 cookbook
+  [Select2 Cookbook](https://kevin-brown.com/select2-cookbook/)
+  
+  ## clear options
+  he best way to do this now is:
+  ```javascript
+  $('#your_select_input').val('');
+  ```
+  
+  Edit: December 2016 Comments suggest that the below is the updated way to do this:
+  
+  ```
+  $('#your_select_input').val([]);
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false

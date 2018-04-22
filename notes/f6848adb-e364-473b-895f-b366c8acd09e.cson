@@ -1,0 +1,86 @@
+createdAt: "2018-03-18T13:20:05.412Z"
+updatedAt: "2018-03-18T13:22:33.113Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "html 5 blank for api test"
+description: "html 5 blank for api test"
+snippets: [
+  {
+    name: ""
+    mode: "JavaScript"
+    content: '''
+      <!DOCTYPE html>
+      <html>
+          <head>
+              <meta charset="utf-8">
+              <title>Blank HTML5</title>
+      <style>
+      pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+      .string { color: green; }
+      .number { color: darkorange; }
+      .boolean { color: blue; }
+      .null { color: magenta; }
+      .key { color: red; }
+      </style>
+      
+          </head>
+          <body>
+              <button id='act'>act</button>
+          	<p>
+          		<pre id="content"></pre>
+          	</p>
+      
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script>
+      function syntaxHighlight(json) {
+          if (typeof json != 'string') {
+               json = JSON.stringify(json, undefined, 2);
+          }
+          json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          return json.replace(/("(\\\\u[a-zA-Z0-9]{4}|\\\\[^u]|[^\\\\"])*"(\\s*:)?|\\b(true|false|null)\\b|-?\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d+)?)/g, function (match) {
+              var cls = 'number';
+              if (/^"/.test(match)) {
+                  if (/:$/.test(match)) {
+                      cls = 'key';
+                  } else {
+                      cls = 'string';
+                  }
+              } else if (/true|false/.test(match)) {
+                  cls = 'boolean';
+              } else if (/null/.test(match)) {
+                  cls = 'null';
+              }
+              return '<span class="' + cls + '">' + match + '</span>';
+          });
+      }
+      function isjson(){
+        try {
+           var json = JSON.parse(this.responseText);
+        } catch(e) {
+           return false;
+        }
+        return true;
+      }
+      function log(i){
+        $("#content").html(syntaxHighlight(i));
+      }
+      $(document).ready(function() 
+      {
+      	$("#act").click(function()
+      	{
+      		$.getJSON("https://dog.ceo/api/breeds/list/all",function(d)
+      		{
+      			log(d);
+      		})	
+      	});
+      
+      });
+      </script>
+          </body>
+      </html>
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

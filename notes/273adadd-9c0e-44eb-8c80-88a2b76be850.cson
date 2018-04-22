@@ -1,0 +1,63 @@
+createdAt: "2018-04-16T14:56:57.648Z"
+updatedAt: "2018-04-16T03:05:17.676Z"
+content: '''
+  # select
+  ## How do I get the text value of a selected option?
+  Select elements typically have two values that you want to access. First there's the value to be sent to the server, which is easy:
+  ```javascript
+  $("#myselect" ).val();
+  // => 1
+  ```
+  **text value**
+  ```javascript
+  $( "#myselect option:selected" ).text();
+  // => "Mr"
+  ```
+  
+  ## iterate through `select` options
+  
+  ```javascript
+  $("#selectId > option").each(function() {
+      alert(this.text + ' ' + this.value);
+  });
+  ```
+  
+  ## disable `select` option conditionally
+  ```javascript
+  $("#flightfrom-select").change(function()
+  {
+      $("#flight-to-select > option").each(function() 
+      {
+           $(this).prop('disabled',false);
+      });
+  
+      var s = $("#flightfrom-select").val();
+      $("#flight-to-select option[value='" + s + "']").prop('disabled','disabled');
+  });
+  ```
+  
+  ## How do you select a particular option in a SELECT element in jQuery?
+  A selector to get the middle option-element by value is
+  ```javascript
+  $('.selDiv option[value="SEL1"]')
+  ```
+  
+  For an index:
+  
+  ```javascript
+  $('.selDiv option:eq(1)')
+  ```
+  For a known text:
+  ```javascript
+  $('.selDiv option:contains("Selection 1")')
+  ```
+  
+  
+  
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "select"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

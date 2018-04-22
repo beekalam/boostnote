@@ -1,0 +1,17 @@
+createdAt: "2018-03-19T16:08:27.613Z"
+updatedAt: "2018-03-19T16:09:12.248Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "Vanilla javascript"
+content: '''
+  # Vanilla javascript
+  
+  ##  Accessing styles in javascript
+  ```
+  document.getElementById('under').style.textDecoration = 'line-through'
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

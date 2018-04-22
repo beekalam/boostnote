@@ -1,0 +1,191 @@
+createdAt: "2018-04-16T14:56:57.668Z"
+updatedAt: "2018-04-16T03:04:54.146Z"
+content: '''
+  
+  ### setting simple event listener
+  ```java
+          mTrueButton = (Button)findViewById(R.id.true_button);
+          mTrueButton.setOnClickListener(new View.OnClickListener(){
+              @Override
+              public void onClick(View v){
+                  Toast.makeText(LoginActivity.this,
+                          R.string.correct_toast,
+                          Toast.LENGTH_SHORT).show();
+              }
+          });
+          mFalseButton = (Button) findViewById(R.id.false_button);
+          mFalseButton.setOnClickListener(new View.OnClickListener(){
+              @Override
+              public void onClick(View v){
+                  Toast.makeText(LoginActivity.this, R.string.incorrect_toast,Toast.LENGTH_SHORT).show();
+              }
+          });
+  ```
+  
+  ### set TextView text
+  
+  ```java
+  mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
+  int question = mQuestionBank[mCurrentIndex].getTxtResId();
+  mQuestionTextView.setText(question);
+  ```
+  
+  ### make a toast message
+  ```java
+  Toast.makeText(LoginActivity.this,
+  				R.string.correct_toast,
+                  Toast.LENGTH_SHORT).show();
+  ```
+  
+  ### referencing resources in XML
+  ```xml
+  <Button
+  	android:id="@+id/next_button"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="@string/next_button"
+  	android:drawableRight="@drawable/arrow_right"
+  	android:drawablePadding="4dp" />
+  ```
+  
+  ### ImageButton
+  #### sample 
+  ```xml
+  <ImageButton
+  android:id="@+id/next_button"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:src="@drawable/arrow_right"
+  />
+  ```
+  ### Overriding onSaveInstanceState(Bundle)
+  ```java
+  public class QuizActivity extends AppCompatActivity {
+  ...
+  @Override
+  protected void onPause() {
+  ...
+  }
+  @Override
+  public void onSaveInstanceState(Bundle savedInstanceState) {
+  	super.onSaveInstanceState(savedInstanceState);
+  	Log.i(TAG, "onSaveInstanceState");
+  	savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+  }
+  @Override
+  protected void onStop() {
+  ...
+  }
+  ...
+  }
+  ```
+  
+  to restore values
+  
+  ```java
+  public class QuizActivity extends AppCompatActivity {
+  ...
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+  	super.onCreate(savedInstanceState);
+  	Log.d(TAG, "onCreate(Bundle) called");
+  	setContentView(R.layout.activity_quiz);
+  	if (savedInstanceState != null) {
+  	mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+  	}
+  ...
+  }
+  ...
+  }
+  ```
+  
+  ## intents
+  ### starting an activity
+  ```java
+  mCheatButton = (Button)findViewById(R.id.cheat_button);
+  mCheatButton.setOnClickListener(new View.OnClickListener() {
+  	@Override
+  	public void onClick(View v) {
+  	// Start CheatActivity
+  	Intent intent = new Intent(QuizActivity.this, CheatActivity.class);
+  		startActivity(intent);
+  	}
+  });
+  ```
+  ## fragments
+  ### Wiring widgets in a fragment
+  ```java
+  public class CrimeFragment extends Fragment {
+  private Crime mCrime;
+  private EditText mTitleField;
+  ...
+  @Override
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+  Bundle savedInstanceState) {
+  View v = inflater.inflate(R.layout.fragment_crime, container, false);
+  mTitleField = (EditText) v.findViewById(R.id.crime_title);
+  mTitleField.addTextChangedListener(new TextWatcher() {
+  @Override
+  public void beforeTextChanged(
+  CharSequence s, int start, int count, int after) {
+  // This space intentionally left blank
+  }
+  @Override
+  public void onTextChanged(
+  CharSequence s, int start, int before, int count) {
+  mCrime.setTitle(s.toString());
+  }
+  @Override
+  public void afterTextChanged(Editable s) {
+  // This one too
+  }
+  });
+  return v;
+  }
+  }
+  ```
+  
+  
+  ## spinner
+  ### bind ListView and Spinner control with String Array
+  ```xml
+  android:entries = "@array/nameofarray"
+  ```
+  
+  ```xml
+  <Spinner
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/MainSpinner"
+          tools:listitem="@layout/support_simple_spinner_dropdown_item"
+          android:entries="@array/Convert_Type"/>
+  ```
+  
+  If you want to change the theme of each item of Spinner then put below style into res/values/styles.xml
+  
+  ```xml
+  <style name="ItemTextAppearance">
+      <item name="android:textColor">#f00</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:typeface">monospace</item>
+  </style>
+  ```
+  
+  and the set
+  ```
+  android:theme="@style/ItemTextAppearance"
+  ```
+  
+  ### selected item text values
+  ```java
+  Spinner spinner = (Spinner)findViewById(R.id.spinner);
+  String text = spinner.getSelectedItem().toString();
+  ```
+  
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "setting simple event listener"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

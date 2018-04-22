@@ -1,0 +1,57 @@
+createdAt: "2018-03-18T09:04:39.432Z"
+updatedAt: "2018-03-18T09:05:15.441Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "[TrainAvailables] = Array"
+content: '''
+  [TrainAvailables] => Array
+  (
+     [0] => stdClass Object
+  (
+     [UniqueKey] => 118@1@25@2018-03-30T11:55:00@4394@1@153@3@169@50@4@2@1@1@970101@1@2018-03-30T00:00:00@500000
+                     [Origin] => 1
+                     [Destination] => 25
+                     [OriginName] =>
+                     [DestinationName] =>
+                     [TrainNumber] => 118
+                     [SCP] => 970101
+                     [Departure] => 2018-03-30T11:55:00
+                     [MoveDate] => 2018-03-30T00:00:00
+                     [DepartureDate] =>
+                     [DepartureTime] => 11:55
+                     [DeparturePersian] => 1397/1/10
+                     [WagonType] => 4394
+                     [Degree] => 1
+                     [WagonName] => 4 تخته البرز
+  [TimeOfArrival] => 03:35
+                     [Media] => 1
+                     [AirCondition] => 1
+                     [FullPrice] => 702500
+                     [FullPriceText] => 702,500
+                     [Cost] => 500000
+                     [CostText] => 500,000
+                     [CompartmentCapacity] => 4
+                     [Wagon] => compartment
+  [IsCompartment] => 1
+                     [RajaPrice] => 500000
+                     [Count] => 285
+                     [PreferredGender] => 3
+                     [ReserveNumber] => 153
+                     [Tariffs] =>
+                     [PathCode] => 169
+                     [RateCode] => 50
+                     [DepartureDateText] =>
+                     [RationCode] => 2
+                     [Owner] => 1
+                     [ServiceType] => 1
+                     [TimeFilterClass] => morning
+  [HasHotelService] =>
+                     [HotelDiscountPercent] =>
+                     [HotelCeilingAmount] =>
+                     [HotelDeadlineDatetime] => 0001-01-01T00:00:00
+                     [HotelDeadlinePersianDatetime] =>
+                 )
+'''
+tags: []
+isStarred: false
+isTrashed: false

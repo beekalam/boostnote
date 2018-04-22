@@ -1,0 +1,22 @@
+createdAt: "2018-04-14T03:28:42.838Z"
+updatedAt: "2018-04-14T03:29:15.065Z"
+type: "MARKDOWN_NOTE"
+folder: "554a37a8a3961e45e68d"
+title: "jquery"
+content: '''
+  # jquery
+  ## scroll
+  ```js
+      $(document).ready(function () {
+          $(".move_down").click(function () {
+              $('html, body').animate({scrollTop: '+=150px'}, 800);
+          });
+          $(".move_up").click(function () {
+              $('html, body').animate({scrollTop: '-=150px'}, 800);
+          });
+      });
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false

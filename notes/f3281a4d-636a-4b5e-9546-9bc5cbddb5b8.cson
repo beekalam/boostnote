@@ -1,0 +1,37 @@
+createdAt: "2018-03-27T12:28:16.490Z"
+updatedAt: "2018-03-27T12:30:26.963Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "apache modules"
+content: '''
+  # apache modules
+  
+  ## check if apache modules is enabled
+  ### from shell
+  Apache modules list can be found from terminal. Below is a code, just copy and paste it in terminal. And you will get screen like below image.
+  
+  ```
+  apachectl -M
+  1
+  apachectl -M
+  ``` 
+  
+  If you are on debian based system, above command won’t work. Try below command.
+  
+  ```
+  apache2ctl -M
+  1
+  apache2ctl -M
+  ```
+  
+  ### From phpinfo()
+  
+  just use `<?php echo php_info(); ?>`.
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

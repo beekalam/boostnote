@@ -1,0 +1,37 @@
+createdAt: "2018-03-18T12:50:36.510Z"
+updatedAt: "2018-03-18T12:51:29.561Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "html5 blank template"
+description: "html5 blank template"
+snippets: [
+  {
+    name: ""
+    mode: "HTML"
+    content: '''
+      <!DOCTYPE html>
+      <html>
+          <head>
+              <meta charset="utf-8">
+              <title>Blank HTML5</title>
+      <style>
+      </style>
+          </head>
+          <body>
+      
+              <p>This is my HTML5 Boilerplate.</p>
+      
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script>
+      $(document).ready(function() {
+      
+      });
+      </script>
+          </body>
+      </html>
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

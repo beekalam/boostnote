@@ -1,0 +1,447 @@
+createdAt: "2018-04-15T05:29:07.855Z"
+updatedAt: "2018-04-15T05:29:39.258Z"
+type: "SNIPPET_NOTE"
+folder: "2d318b1023a78a20fa3c"
+title: "mellat pay"
+description: "mellat pay"
+snippets: [
+  {
+    name: "pay.php"
+    mode: "PHP"
+    content: '''
+      	<script language="javascript" type="text/javascript">    
+      		function postRefId (refIdValue) {
+      			var form = document.createElement("form");
+      			form.setAttribute("method", "POST");
+      			form.setAttribute("action", "https://pgw.bpm.bankmellat.ir/pgwchannel/startpay.mellat");         
+      			form.setAttribute("target", "_self");
+      			var hiddenField = document.createElement("input");              
+      			hiddenField.setAttribute("name", "RefId");
+      			hiddenField.setAttribute("value", refIdValue);
+      			form.appendChild(hiddenField);
+      			document.body.appendChild(form);         
+      			form.submit();
+      			document.body.removeChild(form);
+      		}		
+      	</script>
+      <fieldset >
+      <legend><img src="images/Hamrah-Bank-Mellat_icon.png"/> سامانه پرداخت آنلاين</legend>
+      
+      <form name="form1" method="post" preservedata="true">
+      		<div style="text-align:center; direction:ltr; font:bold 14px/28px tahoma; direction:rtl">
+      		مبلغ تراکنش (به ريال):
+      		<input type="text" dir="ltr" name="PayAmount" >
+      		<input type="submit"  name="PayRequestButton" value="ارسال" />
+      		</div>	
+      </fieldset>        	
+      </form>							
+      <?php
+      $callBack = str_replace(basename(cpurl()),'',cpurl()).'?acid=28';
+      require_once ("core/lib/nusoap.php");
+      global $shamsidts;
+      //curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+      //$page = curl_exec ($ch);
+      
+      $client = new nusoap_client('https://pgws.bpm.bankmellat.ir/pgwchannel/services/pgw?wsdl');
+      $namespace = 'http://interfaces.core.sw.bps.com/';
+      
+      ///////////////// PAY REQUEST
+      
+      
+      if (isset($_POST['PayRequestButton'])) {
+      
+          $terminalId = '991299';
+          $userName = 'irpnut';
+          $userPassword = 'ir33nu33';
+          $orderId = mt_rand();
+          $amount = $_POST['PayAmount'];
+          $localDate = date("Ymd");
+          $localTime = date("His");
+          $additionalData = '';
+          $callBackUrl = $callBack;
+          $payerId = 0;
+      
+          // Check for an error
+          $err = $client->getError();
+          if ($err) {
+              //echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+              errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+              erres('خطا در انجام عمليات');
+          }
+      
+          $parameters = array(
+              'terminalId' => $terminalId,
+              'userName' => $userName,
+              'userPassword' => $userPassword,
+              'orderId' => $orderId,
+              'amount' => $amount,
+              'localDate' => $localDate,
+              'localTime' => $localTime,
+              'additionalData' => $additionalData,
+              'callBackUrl' => $callBackUrl,
+              'payerId' => $payerId);
+      
+          // Call the SOAP method
+          $result = $client->call('bpPayRequest', $parameters, $namespace);
+      
+          // Check for a fault
+          if ($client->fault) {
+              errorlog($_SESSION['UserName'], serialize($result), $shamsidts, 7);
+              //echo '<h2>Fault</h2><pre>';
+              //print_r($result);
+              //echo '</pre>';
+              erres('خطا در انجام عمليات');
+          } else {
+              // Check for errors
+      
+              $resultStr = $result;
+      
+              $err = $client->getError();
+              if ($err) {
+                  // Display the error
+                  //echo '<h2>Error</h2><pre>' . $err . '</pre>';
+                  errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                  erres('خطا در انجام عمليات');
+              } else {
+                  // Display the result
+      
+                  $res = explode(',', $resultStr);
+                  //ok res
+                  //echo "<script>alert('Pay Response is : " . $resultStr . "');</script>";
+                  //echo "Pay Response is : " . $resultStr;
+      
+                  $ResCode = $res[0];
+                  payment_to_bank($_SESSION['UserName'], $_SESSION['UserID'], $orderId, $res[1], $ResCode,
+                      $amount, $shamsidts);
+                  if ($ResCode == "0") {
+                      // Update table, Save RefId
+                      echo "<script language='javascript' type='text/javascript'>postRefId('" . $res[1] .
+                          "');</script>";
+                  } else {
+                      erres('خطا در انجام عمليات <br />' . ResCodeTitle($ResCode));
+                      // log error in app
+                      // Update table, log the error
+                      // Show proper message to user
+                  }
+              } // end Display the result
+          } // end Check for errors
+      
+      }
+      
+      ?>
+    '''
+  }
+  {
+    name: "callback.php"
+    mode: "PHP"
+    content: '''
+      <?php
+      //require_once('../../core/inc.php');
+      $RefId = $_POST['RefId'];
+      $ResCode = $_POST['ResCode'];
+      //echo ResCodeTitle($ResCode);
+      $SaleOrderId = $_POST['SaleOrderId'];
+      $SaleReferenceId = $_POST['SaleReferenceId'];
+      require_once ("core/lib/nusoap.php");
+      global $shamsidts;
+      //curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+      //$page = curl_exec ($ch);
+      
+      $client = new nusoap_client('https://pgws.bpm.bankmellat.ir/pgwchannel/services/pgw?wsdl');
+      $namespace = 'http://interfaces.core.sw.bps.com/';
+      ///////////////// VERIFY REQUEST
+      $terminalId = '991299';
+      $userName = 'irpnut';
+      $userPassword = 'ir33nu33';
+      $orderId = $SaleOrderId;
+      $verifySaleOrderId = $SaleOrderId;
+      $verifySaleReferenceId = $SaleReferenceId;
+      
+      // Check for an error
+      $err = $client->getError();
+      if ($err) {
+          //echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+          errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+          erres('خطا در انجام عمليات');
+          //die();
+      }
+      
+      $parameters = array(
+          'terminalId' => $terminalId,
+          'userName' => $userName,
+          'userPassword' => $userPassword,
+          'orderId' => $orderId,
+          'saleOrderId' => $verifySaleOrderId,
+          'saleReferenceId' => $verifySaleReferenceId);
+      
+      // Call the SOAP method
+      $result = $client->call('bpVerifyRequest', $parameters, $namespace);
+      
+      // Check for a fault
+      if ($client->fault) {
+          errorlog($_SESSION['UserName'], serialize($result), $shamsidts, 7);
+          //echo '<h2>Fault</h2><pre>';
+          //print_r($result);
+          //echo '</pre>';
+          erres('خطا در انجام عمليات');
+      } else {
+      
+          $resultStr = $result;
+      
+          $err = $client->getError();
+          if ($err) {
+              ///////////////// INQUIRY REQUEST
+              // $terminalId = $_POST['TerminalId'];
+              // $userName = $_POST['UserName'];
+              // $userPassword = $_POST['UserPassword'];
+              // $orderId = $_POST['InquiryOrderId'];
+              $inquirySaleOrderId = $SaleOrderId;
+              $inquirySaleReferenceId = $SaleReferenceId;
+      
+              // Check for an error
+              $err = $client->getError();
+              if ($err) {
+                  //echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+                  //die();
+                  errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                  erres('خطا در انجام عمليات');
+              }
+      
+              $parameters = array(
+                  'terminalId' => $terminalId,
+                  'userName' => $userName,
+                  'userPassword' => $userPassword,
+                  'orderId' => $orderId,
+                  'saleOrderId' => $inquirySaleOrderId,
+                  'saleReferenceId' => $inquirySaleReferenceId);
+      
+              // Call the SOAP method
+              $result = $client->call('bpInquiryRequest', $parameters, $namespace);
+      
+              // Check for a fault
+              if ($client->fault) {
+                  /*echo '<h2>Fault</h2><pre>';
+                  print_r($result);
+                  echo '</pre>';
+                  die();*/
+                  errorlog($_SESSION['UserName'], serialize($result), $shamsidts, 7);
+                  erres('خطا در انجام عمليات');
+              } else {
+                  $resultStr = $result;
+      
+                  $err = $client->getError();
+                  if ($err) {
+                      ///////////////// REVERSAL REQUEST
+                      // $terminalId = $_POST['TerminalId'];
+                      // $userName = $_POST['UserName'];
+                      // $userPassword = $_POST['UserPassword'];
+                      // $orderId = $_POST['ReversalOrderId'];
+                      $reversalSaleOrderId = $SaleOrderId;
+                      $reversalSaleReferenceId = $SaleReferenceId;
+      
+                      // Check for an error
+                      $err = $client->getError();
+                      if ($err) {
+                          //echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+                          //die();
+                          errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                          erres('خطا در انجام عمليات');
+                      }
+      
+                      $parameters = array(
+                          'terminalId' => $terminalId,
+                          'userName' => $userName,
+                          'userPassword' => $userPassword,
+                          'orderId' => $orderId,
+                          'saleOrderId' => $reversalSaleOrderId,
+                          'saleReferenceId' => $reversalSaleReferenceId);
+      
+                      // Call the SOAP method
+                      $result = $client->call('bpReversalRequest', $parameters, $namespace);
+      
+                      // Check for a fault
+                      if ($client->fault) {
+                          /*echo '<h2>Fault</h2><pre>';
+                          print_r($result);
+                          echo '</pre>';
+                          die();*/
+                          errorlog($_SESSION['UserName'], serialize($result), $shamsidts, 7);
+                          erres('خطا در انجام عمليات');
+                      } else {
+                          $resultStr = $result;
+      
+                          $err = $client->getError();
+                          if ($err) {
+                              // Display the error
+                              //echo '<h2>Error</h2><pre>' . $err . '</pre>';
+                              //die();
+                              errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                              erres('خطا در انجام عمليات');
+                          } else {
+                              // Update Table, Save Reversal Status
+                              // Note: Successful Reversal means that sale is reversed.
+                              //wares($resultStr);
+                              //echo "Reversal Response is : " . $resultStr;
+                          } // end Display the result
+                      } // end Check for errors
+      
+      
+                      // Display the error
+                      //echo '<h2>Error</h2><pre>' . $err . '</pre>';
+                      //die();
+                      errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                      erres('خطا در انجام عمليات');
+                  } else {
+                      // Update Table, Save Inquiry Status
+                      // Note: Successful Inquiry means complete successful sale was done.
+                      //echo "<script>alert('Inquiry Response is : " . $resultStr . "');</script>";
+                      ///////////////// SETTLE REQUEST
+      
+                      $settleSaleOrderId = $SaleOrderId;
+                      $settleSaleReferenceId = $SaleReferenceId;
+      
+      
+                      // Check for an error
+                      $err = $client->getError();
+                      if ($err) {
+                          /*echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+                          die();*/
+                          errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                          erres('خطا در انجام عمليات');
+                      }
+      
+                      $parameters = array(
+                          'terminalId' => $terminalId,
+                          'userName' => $userName,
+                          'userPassword' => $userPassword,
+                          'orderId' => $orderId,
+                          'saleOrderId' => $settleSaleOrderId,
+                          'saleReferenceId' => $settleSaleReferenceId);
+      
+                      // Call the SOAP method
+                      $result = $client->call('bpSettleRequest', $parameters, $namespace);
+      
+                      // Check for a fault
+                      if ($client->fault) {
+                          /*echo '<h2>Fault</h2><pre>';
+                          print_r($result);
+                          echo '</pre>';
+                          die();*/
+                          errorlog($_SESSION['UserName'], serialize($result), $shamsidts, 7);
+                          erres('خطا در انجام عمليات');
+                      } else {
+                          $resultStr = $result;
+      
+                          $err = $client->getError();
+                          if ($err) {
+                              // Display the error
+                              //echo '<h2>Error</h2><pre>' . $err . '</pre>';
+                              //die();
+                              errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                              erres('خطا در انجام عمليات');
+                          } else {
+                              // Update Table, Save Settle Status
+                              // Note: Successful Settle means that sale is settled.
+      
+                              //echo "Settle Response is : " . $resultStr;
+                          } // end Display the result
+                      } // end Check for errors
+      
+      
+                      //echo "Inquiry Response is : " . $resultStr;
+                      //wares($resultStr);
+                  } // end Display the result
+              } // end Check for errors
+      
+      
+              // Display the error
+              //echo '<h2>Error</h2><pre>' . $err . '</pre>';
+              //die();
+              errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+              erres('خطا در انجام عمليات');
+          } else {
+              // Display the result
+              // Update Table, Save Verify Status
+              // Note: Successful Verify means complete successful sale was done.
+      
+              //echo "Verify Response is : " . $resultStr;
+      
+              ///////////////// SETTLE REQUEST
+              // $terminalId = $_POST['TerminalId'];
+              // $userName = $_POST['UserName'];
+              // $userPassword = $_POST['UserPassword'];
+              // $orderId = $_POST['SettleOrderId'];
+              $settleSaleOrderId = $SaleOrderId;
+              $settleSaleReferenceId = $SaleReferenceId;
+      
+      
+              // Check for an error
+              $err = $client->getError();
+              if ($err) {
+                  //echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+                  //die();
+                  errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                  erres('خطا در انجام عمليات');
+              }
+      
+              $parameters = array(
+                  'terminalId' => $terminalId,
+                  'userName' => $userName,
+                  'userPassword' => $userPassword,
+                  'orderId' => $orderId,
+                  'saleOrderId' => $settleSaleOrderId,
+                  'saleReferenceId' => $settleSaleReferenceId);
+      
+              // Call the SOAP method
+              $result = $client->call('bpSettleRequest', $parameters, $namespace);
+      
+              // Check for a fault
+              if ($client->fault) {
+                  /*echo '<h2>Fault</h2><pre>';
+                  print_r($result);
+                  echo '</pre>';
+                  die();*/
+                  errorlog($_SESSION['UserName'], serialize($result), $shamsidts, 7);
+                  erres('خطا در انجام عمليات');
+              } else {
+                  $resultStr = $result;
+      
+                  $err = $client->getError();
+                  if ($err) {
+                      // Display the error
+                      //echo '<h2>Error</h2><pre>' . $err . '</pre>';
+                      //die();
+                      errorlog($_SESSION['UserName'], $err, $shamsidts, 7);
+                      erres('خطا در انجام عمليات');
+                  } else {
+                      // Update Table, Save Settle Status
+                      // Note: Successful Settle means that sale is settled.
+      
+                      //echo "Settle Response is : " . $resultStr;
+                      //wares($resultStr);
+                      
+                  } // end Display the result
+              } // end Check for errors
+      
+          } // end Display the result
+      } // end Check for errors
+      
+      if($ResCode == 0 ){
+          callback_bank($SaleOrderId,$ResCode,$SaleReferenceId,$shamsidts,$_SESSION[UserID]);
+          okres('عمليات با موفقيت انجام شد <br /> کد رهگيري شما : '.$SaleReferenceId .'<br /><br /> <a href="/">جهت اعمال تغييرات اينجا کليک کنيد</a>');
+          //header( "refresh:3;url=/" );
+      }else{
+          erres('عمليات با خطا مواجه شده است <br />'.ResCodeTitle($ResCode));
+          errorlog($_SESSION['UserName'],'عمليات با خطا مواجه شده است <br />'.ResCodeTitle($ResCode), $shamsidts, 7);
+          callback_bank_error($SaleOrderId,$ResCode,$SaleReferenceId,$shamsidts,$_SESSION[UserID]);
+      }
+      
+      ?>
+      
+          
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

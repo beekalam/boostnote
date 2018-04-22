@@ -1,0 +1,35 @@
+createdAt: "2018-03-20T05:46:57.069Z"
+updatedAt: "2018-03-20T09:12:50.742Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "project based learning"
+content: '''
+  # project based learning
+  ## [Ask HN: “Write your own” or “Build your own” software projects | Hacker News](https://news.ycombinator.com/item?id=16591918&utm_source=hackernewsletter&utm_medium=email&utm_term=ask_hn)
+  ## [How Does a Database Work? | Let’s Build a Simple Database](https://cstack.github.io/db_tutorial/)
+  ## [Linux containers in 500 lines of code](https://blog.lizzie.io/linux-containers-in-500-loc.html)
+  ## [Malloc tutorial](https://danluu.com/malloc-tutorial/)
+  ## [Naivecoin: a tutorial for building a cryptocurrency](https://lhartikk.github.io/)
+  ## [The Architecture of Open Source Applications](http://aosabook.org/en/index.html)
+  ## [Table of Contents · Crafting Interpreters](http://www.craftinginterpreters.com/contents.html)
+  ## [Handmade Hero](https://handmadehero.org/)
+  ## [Build Your Own Text Editor](https://viewsourcecode.org/snaptoken/kilo/)
+  ## https://github.com/hexacta/didact
+  ## [Create Your Own Programming Language](http://createyourproglang.com/)
+  ## [GetGood: Build Your Own Sinatra](https://getgood.at/build-your-own/sinatra)
+  ## [JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30 tutorials](https://javascript30.com/)
+  ## https://github.com/jamiebuilds/the-super-tiny-compiler
+  ## https://github.com/markerikson/react-redux-links/blob/master/react-implementation.md#miniature-react-implementations
+  ## [The Great Code Club](http://www.greatcodeclub.com/)
+  ## [Let's Build a Compiler](https://compilers.iecc.com/crenshaw/)
+  ## https://github.com/lotabout/Let-s-build-a-compiler
+  ## [gitlet.js](http://gitlet.maryrosecook.com/docs/gitlet.html)
+  ## [lisp.py](http://khamidou.com/compilers/lisp.py/)
+  ## [The Elements of Computing Systems / Nisan & Schocken](http://nand2tetris.org/)
+  ## [Catalog](https://www.destroyallsoftware.com/screencasts/catalog)
+  ## [100 Days CSS Challenge](https://100dayscss.com/)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

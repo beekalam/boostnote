@@ -1,0 +1,25 @@
+createdAt: "2018-04-16T14:56:57.684Z"
+updatedAt: "2018-04-16T03:05:24.353Z"
+content: '''
+  # sublime
+  
+  ## add comma to each line
+  
+  'Find What': `$` // matching all ends of your lines
+  'Replace With': `,` // replaces all line ends with a coma
+  
+  
+  ## remove empty and blank lines
+  
+  Find what: `^\\n`
+  Replace With: (nothing, leave in blank).
+  
+  In case if there are space regexp can be `^\\s+$`
+  
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "sublime"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,108 @@
+createdAt: "2018-04-03T06:50:09.828Z"
+updatedAt: "2018-04-05T06:17:12.061Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "mustache"
+content: '''
+  # mustache
+  ## Templates as Inline Scripts
+  ```javascript
+  <script id="sample_template" type="text/html">
+  <h1>{{name}}</h1>
+  </script>
+  
+  <script type='text/javascript'>
+    var template = document.getElementById('sample_template').innerHTML;
+    var output = Mustache.render(template, view);
+    document.getElementById('person').innerHTML = output;
+  </script>
+  ```
+  ## Templates as External HTML Snippets
+  external template file
+  ```html
+  <div id="template1" >
+  <h1>{{name}}</h1>
+  </div>
+  
+  <div id="template2" >
+  <div>{{name}}</div>
+  </div>
+  
+  <div id="template3" >
+  <p><span>{{name}}</span></p>
+  </div>
+  ```
+  
+  ```html
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <title>Mustache.js External Method</title>
+      <script type="text/javascript" src="jquery.js" ></script>
+      <script type="text/javascript" src="mustache.js" ></script>
+      <script>
+        $(document).ready(function(){
+          var view = {
+            name : "Joe",
+            occupation : "Web Developer"
+          };
+  
+          $("#templates").load("template.html #template1",function(){
+            var template = document.getElementById('template1').innerHTML;
+            var output = Mustache.render(template, view);
+            $("#person").html(output);
+          });
+        });
+      </script>
+    </head>
+    <body>
+      <p id="person"></p>
+      <div id="templates" style="display: none;"></div>
+    </body>
+  </html>
+  ```
+  
+  ## Accessing object properties and methods
+  Your data object can also contain other objects — for example:
+  
+  ```javascript
+  {
+    "name": "SuperWidget",
+    "colour": "Green",
+    "price": {
+      "regular": "19.99",
+      "discount": "14.99"
+    }
+  }
+  ```
+  
+  To access a property or method of an object from within your Mustache template, 
+  you can use the dot (.) notation, like this:
+  
+  ```html
+  <h4>Product Info: {{name}}</h4>
+  
+  <ul>
+    <li>Product: {{name}}</li>
+    <li>Colour: {{colour}}</li>
+    <li>Regular Price: ${{price.regular}}</li>
+    <li>Discount Price: ${{price.discount}}</li>
+  </ul>
+  Combining the above object and template produces the following output:
+  
+  <h4>Product Info: SuperWidget</h4>
+  
+  <ul>
+    <li>Product: SuperWidget</li>
+    <li>Colour: Green</li>
+    <li>Regular Price: $19.99</li>
+    <li>Discount Price: $14.99</li>
+  </ul>
+  ```
+  
+'''
+tags: [
+  "jquery"
+]
+isStarred: false
+isTrashed: false

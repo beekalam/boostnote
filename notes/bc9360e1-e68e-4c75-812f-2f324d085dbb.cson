@@ -1,0 +1,629 @@
+createdAt: "2018-03-25T06:02:23.612Z"
+updatedAt: "2018-04-17T06:56:49.697Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "tmp"
+content: '''
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  # tmp
+  202049636000076320007127
+  94.183.230.218
+  2342305
+  sa
+  
+  # src
+  https://github.com/larsbrinkhoff/httptunnel
+  [Fast Premium SSH Account | FastSSH.com](https://fastssh.com/)
+  [TCP Over HTTP Tunnel download | SourceForge.net](https://sourceforge.net/projects/tcp-over-http-tunnel/?source=navbar)
+  [Create SSH Account for SSH Server Netherlands 2| FastSSH.com](https://www.fastssh.com/page/ssh-account-creator/server/27/SSH-Server-Netherlands-2/)
+  
+  # how to take notes[search]
+  
+  # eligasht
+  beekalam@gmail.com
+  098098mki
+  ```
+  
+  														<div class="form-group col-xs-12 col-md-12">
+                                  <label for="email">نام:</label>
+  																<div class="input-group input-group-sm">
+  																		<span class="input-group-addon span_cus" id="sizing-addon8">
+  														  				<i class="fa fa-envelope"></i>
+  															  		</span>
+  																		<input  type="text"
+                                              class="form-control input_cus"
+                                              name="name" id="name"
+                                              aria-describedby="sizing-addon8">
+  																</div>
+  														</div>
+  
+  
+  														<div class="form-group col-xs-12 col-md-12">
+                                       <label for="email">نام خانوادگی:</label>
+  																<div class="input-group input-group-sm">
+  																		<span class="input-group-addon span_cus" id="sizing-addon8">
+  														  <i class="fa fa-envelope"></i>
+  															  </span>
+  																		<input  type="text"
+                                              class="form-control input_cus"
+                                              name="family" id="family"
+                                              aria-describedby="sizing-addon8">
+  																</div>
+  														</div>
+  
+  														<div class="form-group col-xs-12 col-md-12">
+                                       <label for="email">نام خانوادگی:</label>
+  																<div class="input-group input-group-sm">
+  																		<span class="input-group-addon span_cus" id="sizing-addon8">
+  														  <i class="fa fa-envelope"></i>
+  															  </span>
+  																		<input  type="text"
+                                              class="form-control input_cus"
+                                              name="family" id="family"
+                                              aria-describedby="sizing-addon8">
+  																</div>
+  														</div>
+  
+  
+  
+  														<div class="form-group col-xs-12 col-md-12">
+                                       <label for="email">کد ملی:</label>
+  																<div class="input-group input-group-sm">
+  																		<span class="input-group-addon span_cus" id="sizing-addon8">
+  														  <i class="fa fa-envelope"></i>
+  															  </span>
+  																		<input  type="text"
+                                              class="form-control input_cus"
+                                              name="family" id="family"
+                                              aria-describedby="sizing-addon8">
+  																</div>
+  														</div>
+  
+  														<div class="form-group col-xs-12 col-md-12">
+                                       <label for="email">:</label>
+  																<div class="input-group input-group-sm">
+  																		<span class="input-group-addon span_cus" id="sizing-addon8">
+  														  <i class="fa fa-envelope"></i>
+  															  </span>
+  																		<input id="name" type="text"
+                                              class="form-control input_cus"
+                                              name="family" id="family"
+                                              aria-describedby="sizing-addon8">
+  																</div>
+  														</div>
+  
+  ```
+  # email activation
+  ```
+  ایمیل فعالسازی به آدرس شما ارسال گردید. جهت فعالسازی به ایمیل خود مراجعه کنید و روی لینک فعالسازی کلیک کنید. اگر ایمیل به پوشه spam رفته باشد لینک داخل آن فعال نیست. برای حل این مشکل ایمیل را باز کنید و گزینه Not Spam را در قسمت بالای ایمیل انتخاب کنید. اگر ایمیل را با نرم افزار موبایل باز کرده اید، گزینه Report not spam را انتخاب کنید. با این کار ایمیل به inbox ایمیلتان منتقل میشود و لینک داخل آن فعال میشود.
+  ```
+  
+  
+  
+  ```
+  
+  Control Panel Username: uoolo_21836532
+  Control Panel Password: 098098mki
+  Your URL: http://kilo100toman.ihostfull.com
+  FTP Server: ftp.ihostfull.com
+  FTP Login: uoolo_21836532
+  FTP Password: 098098mki
+  MySQL Database Name: CREATE INSIDE CONTROL PANEL
+  MySQL Username: uoolo_21836532
+  MySQL Password: 098098mki
+  MySQL Server: SEE INSIDE CONTROL PANEL
+  
+  Control Panel URL: http://cpanel.ihostfull.com
+  ```
+  
+  
+  
+  
+  
+  
+  # fara
+  hping3 --random-source -p 1723 -i u100 -d 1 94.74.128.21
+  
+  
+  
+  
+  ```
+  Array
+  (
+      [Id] => 16101128Y
+      [AirLine] => کاسپین
+      [Aircraft] => 
+      [LeaveDate] => 04/19/2018
+      [LeaveDateFa] => 1397/1/30
+      [LeaveTime] => 2130
+      [ArrivalTime] => ساعت فرود : 22:30
+      [From] => SYZ
+      [To] => THR
+      [FromShowName] => شیراز
+      [ToShowName] => تهران
+      [FlightNumber] => iv049
+      [AirLineEnglish] => IV
+      [ClassType] => E
+      [ClassPrice] => 2098000ریال
+      [ClassCount] => 0
+      [Type] => E S
+      [ClassDetails] => ظرفیت تکمیل
+      [kind] => اکونومی
+      [price] => 2098000
+      [DayOfWeek] => پنج شنبه
+      [count] => 0
+      [ticketClass] => 
+      [PriceChild] => 
+      [PriceInfant] => 
+      [isAvailable] => 
+      [uniqId] => 16101128
+      [Description] => 900003
+      [HasConnection] => 
+      [UrlLink] => 
+      [Order_Index] => 0
+      [CRCN] => 
+      [P1] => -
+      [P2] => -
+      [P3] => -
+      [P4] => -
+      [P5] => -
+      [SellerId] => 900003
+      [SellerReference] => payamtosesaba
+      [SystemKey] => R
+      [SystemKeyName] => چارتر
+      [SpecialServices] => 
+      [TicketOrginalPrice] => 1,671,000
+      [TicketCharterPrice] => 427,000
+      [TicketOverPrice] => 2,098,000
+      [CharterOverPrice] => 
+  )
+  ```
+  
+  
+  <script type="text/html">
+      <div class="col-md-12 passenger_num_age_col  ">
+  										 	<span class="label label-default purple cyan pass_num badge badge-secondary"> 1.
+  										 	 بزرگسال 1</span>
+      </div>
+      <div class="col-md-12 sign_up_col">
+          <div class="row pas_form_row">
+              <div class="form-group col-12 col-md-2 col_input2">
+                  <select class="selectpicker form-control "
+                          name="entrm_kind" id="entrm_kind"
+                          data-style="btn btn-default dropdown-toggle filt_but txt_black">
+                      <option class="disabled selected">جنسیت</option>
+                      <option value="female">زن</option>
+                      <option value="male">مرد</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="en_name">نام به انگلیسی</label>
+                  <div class="input-group input-group-sm">
+  												  <span class="input-group-addon span_cus" id="sizing-addon3">
+  												  	<i class="fa fa-user"></i>
+  												  </span>
+                      <input type="text" class="form-control input_cus"
+                             id="en_first_name"
+                             name="en_first_name"
+                             aria-describedby="sizing-addon3">
+                  </div>
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="lastname">نام خانوادگی به انگلیسی :</label>
+                  <div class="input-group input-group-sm">
+  												  <span class="input-group-addon span_cus" id="sizing-addon4">
+  												  <i class="fa fa-user"></i>
+  													  </span>
+                      <input type="text" class="form-control input_cus"
+                             id="en_last_name"
+                             name="en_last_name"
+                             aria-describedby="sizing-addon4">
+                  </div>
+              </div>
+              <div class="form-group col-md-2">
+                  <label for="birth_date">تاریخ تولد :</label>
+                  <div class="input-group input-group-sm">
+  												  <span class="input-group-addon span_cus" id="sizing-addon7">
+  												  <i class="fa fa-calendar"></i>
+  													  </span>
+                      <input type="text"
+                             class="form-control input_cus has-datepicker"
+                              name="birth_date"
+                             placeholder="mm/dd/yyyy"
+                             aria-describedby="sizing-addon7">
+                  </div>
+              </div>
+              <div class="form-group col-md-2">
+                  <label for="nation_code">کد ملی :</label>
+                  <div class="input-group input-group-sm">
+  												  <span class="input-group-addon span_cus" id="sizing-addon8">
+  												  <i class="fa fa-user"></i>
+  													  </span>
+                      <input type="text" class="form-control input_cus"
+                             id="national_code" name="national_code"
+                             aria-describedby="sizing-addon8">
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  </script>
+  
+  ## bill collapse content
+            <div class="card-body collapse_cart">
+                                          <div class="col-12 col-md-12 title_col pb-3">
+                                              <h6 class="txt_gray">
+                                                  پیش فاکتور نهایی
+                                              </h6>
+                                          </div>
+                                          <div class="row row_final_reserve_table">
+                                              <div class="col-md-12 pas_row">
+                                                  <div class="row bill_num_row txt_gray">
+                                                      <div class="col-md-6 bill_num_col">
+                                                          <span class="pass_num"><i class="fa fa-clipboard"></i></span>
+                                                          شماره پیش فاکتور
+                                                          <span class=""> 8976567</span>
+                                                      </div>
+                                                      <div class="col-md-2 offset-md-4 bill_num_col">
+                                                          <a type="sumbit" href="user_profile.html"
+                                                             class="btn btn-raised btn_cusorg btn-sm w-50"><i
+                                                                      class="fa fa-print"></i></a>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row buyer_info_row ">
+                                                      <div class="col-md-12 info_title pb-2">
+                                                          مشخصات خریدار
+                                                      </div>
+                                                      <div class="col-md-12 buyer_details txt_smoke">
+                                                          <div class="row">
+                                                              <div class="col-md-3 buyer_name"> خریدار:ساینا سفر</div>
+                                                              <div class="col-md-3 buyer_mob">موبایل:07136361900</div>
+                                                              <div class="col-md-3 buyer_tell">تلفن ثابت :07136266287
+                                                              </div>
+                                                              <div class="col-md-3 buyer_email">
+                                                                  ایمیل :saynasafar@info.com
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row buyer_info_row ">
+                                                      <div class="col-md-12 info_title">
+                                                          مشخصات مسافران
+                                                      </div>
+                                                      <div class="col-md-12 txt_smoke table-responsive">
+                                                          <table class="table passengers_info txt_smoke">
+                                                              <tbody>
+                                                              <tr class="divider_tr_res">
+                                                                  <td>#</td>
+                                                                  <td>نام</td>
+                                                                  <td>جنسیت</td>
+                                                                  <td>رده سنی</td>
+                                                                  <td>تاریخ تولد</td>
+                                                                  <td>شماره پاسپورت</td>
+                                                                  <td>انقضاء پاسپورت</td>
+                                                                  <td>ملیت</td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td>
+                                                                      1
+                                                                  </td>
+                                                                  <td class="cap">
+                                                                      sayna safar
+                                                                  </td>
+                                                                  <td>
+                                                                      زن
+                                                                  </td>
+                                                                  <td>
+                                                                      بزرگسال
+                                                                  </td>
+                                                                  <td>
+  														<span class="ltr">
+  															1993 jan 28
+  														</span>
+                                                                  </td>
+                                                                  <td>
+                                                                      2281342567
+                                                                  </td>
+                                                                  <td>
+                                                                      <span class="ltr">2019 jan 28</span>
+                                                                  </td>
+                                                                  <td> ایرانی</td>
+  
+  
+                                                              </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                      <div class="col-md-12 info_title">
+                                                          اطلاعات پرواز
+                                                      </div>
+                                                      <div class="col-md-12 txt_smoke table-responsive">
+                                                          <table class="table final_reserv_table_takeoff ">
+                                                              <tbody>
+                                                              <tr class="divider_tr_res">
+                                                                  <td>#</td>
+                                                                  <td>فرودگاه مبدا</td>
+                                                                  <td>فرودگاه مقصد</td>
+                                                                  <td>تاریخ</td>
+                                                                  <td>زمان خروج</td>
+                                                                  <td>زمان ورود</td>
+                                                                  <td>شماره</td>
+                                                                  <td>کلاس پروازی</td>
+                                                                  <td>خط هوایی</td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td>
+                                                                      1
+                                                                  </td>
+                                                                  <td>
+                                                                      <span class="airport_na sp_d">فرودگاه دستغیب شیراز</span>
+                                                                  </td>
+                                                                  <td>
+                                                                      <span class="airport_na sp_d">فرودگاه مهرآباد</span>
+                                                                  </td>
+                                                                  <td>
+  															<span class="FlightDate sp_d rtl">
+  															1396/05/22 </span>
+                                                                  </td>
+                                                                  <td>
+                                                                      <span class="Flighttime_landing sp_d2">19:50</span>
+                                                                  </td>
+                                                                  <td>
+                                                                      <span class="Flighttime_landing sp_d2">21:30</span>
+                                                                  </td>
+                                                                  <td>
+                                                                      1634
+                                                                  </td>
+                                                                  <td class="cap">
+                                                                      economi
+                                                                  </td>
+                                                                  <td class="cap">
+                                                                      iran air
+                                                                  </td>
+  
+                                                              </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row buyer_info_row ">
+                                                      <div class="col-md-12 info_title pb-3">
+                                                          محاسبه قیمت :
+                                                      </div>
+                                                      <div class="col-md-12 buyer_details pt txt_smoke">
+                                                          <div class="row">
+                                                              <div class="col-md-6 final_price">قیمت کل :</div>
+                                                              <div class="col-md-2 offset-md-4 cash">4,356,000 ریال</div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-md-12 buyer_details pt2 final_price_pay_col">
+                                                          <div class="row">
+                                                              <div class="col-md-6 final_price_pay txt_cyan">مبلغ قابل
+                                                                  پرداخت
+                                                              </div>
+                                                              <div class="col-md-2 offset-md-4 cash txt_cyan">4,356,000
+                                                                  ریال
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="row buyer_info_row ">
+                                                      <div class="col-md-2 offset-md-10">
+                                                          <a type="sumbit" href="user_profile.html"
+                                                             class="btn btn-raised btn_cuscyan btn-sm btn_full">پرداخت و
+                                                              ثبت
+                                                              رزرو</a>
+                                                      </div>
+  
+                                                  </div>
+  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+  ==================================
+  
+  <!--                                                <div class="ui-widget" style="direction: rtl">-->
+  <!--                                                    <select id="combobox" style="direction: rtl">-->
+  <!--                                                        <option value="">Select one...</option>-->
+  <!--                                                        --><?php //echo city_airport_select(true); ?>
+  <!--                                                    </select>-->
+  <!--<!--                                                </div>-->-->
+  <!--                                                <script>-->
+  <!--                                                    $( function() {-->
+  <!--                                                        $.widget( "custom.combobox", {-->
+  <!--                                                            _create: function() {-->
+  <!--                                                                this.wrapper = $( "<span>" )-->
+  <!--                                                                    .addClass( "custom-combobox" )-->
+  <!--                                                                    .insertAfter( this.element );-->
+  <!---->
+  <!--                                                                this.element.hide();-->
+  <!--                                                                this._createAutocomplete();-->
+  <!--                                                                this._createShowAllButton();-->
+  <!--                                                            },-->
+  <!---->
+  <!--                                                            _createAutocomplete: function() {-->
+  <!--                                                                var selected = this.element.children( ":selected" ),-->
+  <!--                                                                    value = selected.val() ? selected.text() : "";-->
+  <!---->
+  <!--                                                                this.input = $( "<input>" )-->
+  <!--                                                                    .appendTo( this.wrapper )-->
+  <!--                                                                    .val( value )-->
+  <!--                                                                    .attr( "title", "" )-->
+  <!--                                                                    .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )-->
+  <!--                                                                    .autocomplete({-->
+  <!--                                                                        delay: 0,-->
+  <!--                                                                        minLength: 0,-->
+  <!--                                                                        source: $.proxy( this, "_source" )-->
+  <!--                                                                    })-->
+  <!--                                                                    .tooltip({-->
+  <!--                                                                        classes: {-->
+  <!--                                                                            "ui-tooltip": "ui-state-highlight"-->
+  <!--                                                                        }-->
+  <!--                                                                    });-->
+  <!---->
+  <!--                                                                this._on( this.input, {-->
+  <!--                                                                    autocompleteselect: function( event, ui ) {-->
+  <!--                                                                        ui.item.option.selected = true;-->
+  <!--                                                                        this._trigger( "select", event, {-->
+  <!--                                                                            item: ui.item.option-->
+  <!--                                                                        });-->
+  <!--                                                                    },-->
+  <!---->
+  <!--                                                                    autocompletechange: "_removeIfInvalid"-->
+  <!--                                                                });-->
+  <!--                                                            },-->
+  <!---->
+  <!--                                                            _createShowAllButton: function() {-->
+  <!--                                                                var input = this.input,-->
+  <!--                                                                    wasOpen = false;-->
+  <!---->
+  <!--                                                                $( "<a>" )-->
+  <!--                                                                    .attr( "tabIndex", -1 )-->
+  <!--                                                                    .attr( "title", "Show All Items" )-->
+  <!--                                                                    .tooltip()-->
+  <!--                                                                    .appendTo( this.wrapper )-->
+  <!--                                                                    .button({-->
+  <!--                                                                        icons: {-->
+  <!--                                                                            primary: "ui-icon-triangle-1-s"-->
+  <!--                                                                        },-->
+  <!--                                                                        text: false-->
+  <!--                                                                    })-->
+  <!--                                                                    .removeClass( "ui-corner-all" )-->
+  <!--                                                                    .addClass( "custom-combobox-toggle ui-corner-right" )-->
+  <!--                                                                    .on( "mousedown", function() {-->
+  <!--                                                                        wasOpen = input.autocomplete( "widget" ).is( ":visible" );-->
+  <!--                                                                    })-->
+  <!--                                                                    .on( "click", function() {-->
+  <!--                                                                        input.trigger( "focus" );-->
+  <!---->
+  <!--                                                                        // Close if already visible-->
+  <!--                                                                        if ( wasOpen ) {-->
+  <!--                                                                            return;-->
+  <!--                                                                        }-->
+  <!---->
+  <!--                                                                        // Pass empty string as value to search for, displaying all results-->
+  <!--                                                                        input.autocomplete( "search", "" );-->
+  <!--                                                                    });-->
+  <!--                                                            },-->
+  <!---->
+  <!--                                                            _source: function( request, response ) {-->
+  <!--                                                                var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );-->
+  <!--                                                                response( this.element.children( "option" ).map(function() {-->
+  <!--                                                                    var text = $(this).text();-->
+  <!--                                                                    var en = $(this).attr("data-en") || "";-->
+  <!--                                                                    var fa = $(this).attr("data-fa") || "";-->
+  <!--                                                                    var iatacode = $(this).attr("data-iatacode") || "";-->
+  <!--                                                                    var found = text.indexOf(request.term) !== -1 ||-->
+  <!--                                                                            en.toLowerCase().indexOf(request.term) !== -1 ||-->
+  <!--                                                                            fa.indexOf(request.term) !== -1 ||-->
+  <!--                                                                            iatacode.toLowerCase().indexOf(request.term.toLowerCase()) !== -1;-->
+  <!--                                                                    if(found){-->
+  <!--                                                                        console.log("found");-->
+  <!--                                                                        return{-->
+  <!--                                                                            label:text,-->
+  <!--                                                                            value:text,-->
+  <!--                                                                            option:this-->
+  <!--                                                                        }-->
+  <!--                                                                    }-->
+  <!---->
+  <!--                                                                }) );-->
+  <!--                                                            },-->
+  <!---->
+  <!--                                                            _removeIfInvalid: function( event, ui ) {-->
+  <!---->
+  <!--                                                                // Selected an item, nothing to do-->
+  <!--                                                                if ( ui.item ) {-->
+  <!--                                                                    return;-->
+  <!--                                                                }-->
+  <!---->
+  <!--                                                                // Search for a match (case-insensitive)-->
+  <!--                                                                var value = this.input.val(),-->
+  <!--                                                                    valueLowerCase = value.toLowerCase(),-->
+  <!--                                                                    valid = false;-->
+  <!--                                                                this.element.children( "option" ).each(function() {-->
+  <!--                                                                    if ( $( this ).text().toLowerCase() === valueLowerCase ) {-->
+  <!--                                                                        this.selected = valid = true;-->
+  <!--                                                                        return false;-->
+  <!--                                                                    }-->
+  <!--                                                                });-->
+  <!---->
+  <!--                                                                // Found a match, nothing to do-->
+  <!--                                                                if ( valid ) {-->
+  <!--                                                                    return;-->
+  <!--                                                                }-->
+  <!---->
+  <!--                                                                // Remove invalid value-->
+  <!--                                                                this.input-->
+  <!--                                                                    .val( "" )-->
+  <!--                                                                    .attr( "title", value + " didn't match any item" )-->
+  <!--                                                                    .tooltip( "open" );-->
+  <!--                                                                this.element.val( "" );-->
+  <!--                                                                this._delay(function() {-->
+  <!--                                                                    this.input.tooltip( "close" ).attr( "title", "" );-->
+  <!--                                                                }, 2500 );-->
+  <!--                                                                this.input.autocomplete( "instance" ).term = "";-->
+  <!--                                                            },-->
+  <!---->
+  <!--                                                            _destroy: function() {-->
+  <!--                                                                this.wrapper.remove();-->
+  <!--                                                                this.element.show();-->
+  <!--                                                            }-->
+  <!--                                                        });-->
+  <!---->
+  <!--                                                        $( "#combobox" ).combobox();-->
+  <!--                                                        $( "#toggle" ).on( "click", function() {-->
+  <!--                                                            $( "#combobox" ).toggle();-->
+  <!--                                                        });-->
+  <!--                                                    } );-->
+  <!--                                                </script>-->
+'''
+tags: []
+isStarred: false
+isTrashed: false
+isPinned: true

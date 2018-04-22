@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "key": "4e6ec3c07b3c53796092",
+      "color": "#1278BD",
+      "name": "Default"
+    },
+    {
+      "key": "554a37a8a3961e45e68d",
+      "color": "#E10051",
+      "name": "javascript"
+    },
+    {
+      "key": "2d318b1023a78a20fa3c",
+      "color": "#E8D252",
+      "name": "misc"
+    },
+    {
+      "key": "50be3a94f34a3e8870a3",
+      "color": "#2BA5F7",
+      "name": "linux"
+    },
+    {
+      "key": "a3bbcf26e4caabb101d1",
+      "color": "#2BA5F7",
+      "name": "java"
+    }
+  ],
+  "version": "1.0"
+}

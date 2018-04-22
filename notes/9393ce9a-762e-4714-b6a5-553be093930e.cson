@@ -1,0 +1,42 @@
+createdAt: "2018-04-05T07:51:58.740Z"
+updatedAt: "2018-04-05T08:04:06.189Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "datepicker"
+content: '''
+  # datepicker
+  
+  ## init date picker for multiple inputs
+  __ids have to be unique__
+  ```html
+  <input type="text" name="MyDate1" class="datepicker">
+  <input type="text" name="MyDate2" class="datepicker">
+  
+  ```javascript
+  $(function() {
+    $( ".datepicker" ).datepicker({ dateFormat: "yyyy-mm-dd" });
+  }); 
+  ```
+  also can use
+  
+  ```javascript
+  $(function() {
+    $( "input[name^=MyDate]" ).datepicker({ dateFormat: "yyyy-mm-dd" });
+  });
+  ```
+  
+  ## shamsi datepicker init
+  ```javascript
+   $(".has-datepicker").datepicker(
+    {
+        isRTL: true,
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: "yy/mm/dd"
+    });
+    ```
+    
+'''
+tags: []
+isStarred: false
+isTrashed: false

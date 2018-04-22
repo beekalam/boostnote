@@ -1,0 +1,71 @@
+createdAt: "2018-03-18T08:40:53.472Z"
+updatedAt: "2018-03-18T08:42:45.483Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "xmlhttprequest example"
+description: '''
+  xmlhttprequest example
+  
+'''
+snippets: [
+  {
+    name: "example.js"
+    mode: "JavaScript"
+    content: '''
+      var http_request_date = false;   
+      var alert_flag=true;
+      function makePOSTRequest_date(url, parameters) {
+            if (window.XMLHttpRequest) { // Mozilla, Safari,...
+               http_request_date = new XMLHttpRequest();
+               if (http_request_date.overrideMimeType) {
+               	// set type accordingly to anticipated content type
+                  //http_request_date.overrideMimeType('text/xml');
+                  http_request_date.overrideMimeType('text/html');
+               }
+            } else if (window.ActiveXObject) { // IE
+               try {		 
+                  http_request_date = new ActiveXObject("Microsoft.XMLHTTP");
+               } catch (e) {
+                  try {
+                     http_request_date = new ActiveXObject("Microsoft.XMLHTTP");
+                  } catch (e) {}
+               }
+            }
+            if (!http_request_date) {
+               alert('Cannot create XMLHTTP instance');
+               return false;
+            }
+            http_request_date.onreadystatechange = alertContents_date;  
+            http_request_date.open('POST', url, false);
+            http_request_date.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            http_request_date.setRequestHeader("Content-length", parameters.length);
+            http_request_date.setRequestHeader("Connection", "close");
+      	  // http_request_date.timeout = 25000;
+            http_request_date.ontimeout = function () { 
+      		alert("ŲÆŲ³ŲŖŲ±Ų³Ū ŲØŁ‡ Ų³Ų±ŁŲ± Ł…Ł‚ŲÆŁŲ± Ł†ŪŲ³ŲŖ ");
+      		alert_flag=false;
+      	 }
+            http_request_date.send(parameters);
+         }
+      
+         function alertContents_date() {
+      	   document.getElementById('tmpDate').value='';
+      	  if (http_request_date.readyState == 4) {
+               if (http_request_date.status == 200) {
+         //         alert(http_request_date.responseText);
+      			document.getElementById('tmpDate').value = http_request_date.responseText;
+      		 } else {
+      			 if(alert_flag)
+      		         alert('200:ŲÆŲ³ŲŖŲ±Ų³Ū ŲØŁ‡ Ų§Ų·Ł„Ų§Ų¹Ų§ŲŖ ŲÆŲ±Ų®ŁŲ§Ų³ŲŖŪ Ł…Ł‚ŲÆŁŲ± Ł†ŪŲ³ŲŖ');
+               }
+            } 
+          }   
+    '''
+  }
+]
+tags: [
+  "javascript"
+  "xmlhttprequest"
+]
+isStarred: false
+isTrashed: false

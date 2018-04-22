@@ -1,0 +1,43 @@
+createdAt: "2018-04-10T14:00:52.701Z"
+updatedAt: "2018-04-10T14:01:58.422Z"
+type: "MARKDOWN_NOTE"
+folder: "50be3a94f34a3e8870a3"
+title: "compressing with multiple threads"
+content: '''
+  # compressing with multiple threads
+  Use multi-threads to compress file(s) when tar-ing something
+  
+  In unix systems, tar is a widely used tool to package and compress files, tar always spends a lot of time on compression, because the programs it used don’t support multi-thread computing, but tar supports we use specified program to compress file(s), which means we can use the programs support multi-thread programming to compress files with higher speed!
+  
+  From the manual:
+  
+  -I, –use-compress-program PROG
+  filter through PROG (must accept -d)
+  
+  3 Tools for parallel compression I will use today:
+  
+  gz:   pigz
+  bz2: pbzip2
+  xz:   pxz
+  (Can be easily installed via apt-get in Debian/Ubuntu based linux)
+  
+  Originally commands to tar with compression:
+  
+  ```
+  gz:   tar -czf tarball.tgz files
+  bz2: tar -cjf tarball.tbz files
+  xz:   tar -cJf tarball.txz files
+  ```
+  
+  Parallel version:
+  
+  ```
+  gz:   tar -I pigz -cf tarball.tgz files
+  bz2: tar -I pbzip2 -cf tarball.tbz files
+  xz:   tar -I pxz -cf tarball.txz files
+  ```
+  [reference](https://www.peterdavehello.org/2015/02/use-multi-threads-to-compress-files-when-taring-something/)
+'''
+tags: []
+isStarred: false
+isTrashed: false

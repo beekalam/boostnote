@@ -1,0 +1,23 @@
+createdAt: "2018-04-13T12:52:07.576Z"
+updatedAt: "2018-04-13T13:14:36.000Z"
+type: "MARKDOWN_NOTE"
+folder: "2d318b1023a78a20fa3c"
+title: "xampp"
+content: '''
+  # xampp
+  ## allow `phpmyadmin` from everywhere
+  add the following to `xammp-httpd.conf`
+  ```
+  # New XAMPP security concept
+  #
+  <LocationMatch "^/(?i:(?:xampp|security|licenses|phpmyadmin|webalizer|server-status|server-info))">
+      Require local
+      Require ip 10.0.0.1
+      ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
+  </LocationMatch>
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

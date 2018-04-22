@@ -1,0 +1,2609 @@
+createdAt: "2018-03-18T16:12:23.754Z"
+updatedAt: "2018-03-18T16:12:31.461Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "flight search output"
+description: "flight search output"
+snippets: [
+  {
+    name: ""
+    mode: "text"
+    content: '''
+      stdClass Object
+      (
+          [AvailableFlights] => Array
+              (
+                  [0] => stdClass Object
+                      (
+                          [Id] => 15932426Y
+                          [AirLine] => آتا
+                          [Aircraft] => MD-83
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2245
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => i35634
+                          [AirLineEnglish] => I3
+                          [ClassType] => E
+                          [ClassPrice] => 1998000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1998000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1998000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15932426
+                          [Description] => 113
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => I3
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 113
+                          [SellerReference] => 91857
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 327,000
+                          [TicketOverPrice] => 1,998,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [1] => stdClass Object
+                      (
+                          [Id] => 15887096S
+                          [AirLine] => ماهان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2230
+                          [ArrivalTime] => ساعت فرود : 23:55
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => w51086
+                          [AirLineEnglish] => W5
+                          [ClassType] => E
+                          [ClassPrice] => 3424000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => 
+                          [price] => 3424000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : S
+                          [PriceChild] =>  قیمت کودک : 2588000
+                          [PriceInfant] =>  قیمت نوزاد : 405000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15887096
+                          [Description] => 
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => W5
+                                  [P1] => 10
+                                  [P2] => 10
+                                  [P3] => 30
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبال از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 10%
+                          [P2] => 10%
+                          [P3] => 30%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => M
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,753,000
+                          [TicketOverPrice] => 3,424,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [2] => stdClass Object
+                      (
+                          [Id] => 15875346Y
+                          [AirLine] => کاسپین
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2225
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => iv049
+                          [AirLineEnglish] => IV
+                          [ClassType] => E
+                          [ClassPrice] => 1848000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1848000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1848000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15875346
+                          [Description] => 1000040
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => 
+                          [P1] => -
+                          [P2] => -
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 1000040
+                          [SellerReference] => 521
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 177,000
+                          [TicketOverPrice] => 1,848,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [3] => stdClass Object
+                      (
+                          [Id] => 15902328Y
+                          [AirLine] => کاسپین
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2225
+                          [ArrivalTime] => ساعت فرود : 23:26
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => iv049
+                          [AirLineEnglish] => IV
+                          [ClassType] => E
+                          [ClassPrice] => 1848000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1848000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1848000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15902328
+                          [Description] => 900003
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => 
+                          [P1] => -
+                          [P2] => -
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 900003
+                          [SellerReference] => payamtosesaba
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 177,000
+                          [TicketOverPrice] => 1,848,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [4] => stdClass Object
+                      (
+                          [Id] => 15122781X
+                          [AirLine] => آسمان
+                          [Aircraft] => Fokker 100
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2210
+                          [ArrivalTime] => ساعت فرود : 23:35  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3789
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 1999000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1999000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : X
+                          [PriceChild] =>  قیمت کودک : 1040000
+                          [PriceInfant] =>  قیمت نوزاد : 262000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15122781
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 328,000
+                          [TicketOverPrice] => 1,999,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [5] => stdClass Object
+                      (
+                          [Id] => 15918815Y
+                          [AirLine] => کیش ایر
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2150
+                          [ArrivalTime] => ساعت فرود : 23:05
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => y97150
+                          [AirLineEnglish] => Y9
+                          [ClassType] => E
+                          [ClassPrice] => 2098000ریال
+                          [ClassCount] => 6
+                          [Type] => E S
+                          [ClassDetails] => فقط 6 نفر
+                          [kind] => اکونومی
+                          [price] => 2098000
+                          [DayOfWeek] => جمعه
+                          [count] => 6
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2098000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15918815
+                          [Description] => 900001
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => Y9
+                                  [P1] => 40
+                                  [P2] => 20
+                                  [P3] => 0
+                                  [P4] => 0
+                                  [P5] => 0
+                                  [PS1] => از 24 ساعت قبل از پرواز به بعد
+                                  [PS2] => تا 24 ساعت قبل از پرواز
+                                  [PS3] => 
+                                  [PS4] => 
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 20%
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 900001
+                          [SellerReference] => mehrabgashtsabz
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 427,000
+                          [TicketOverPrice] => 2,098,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [6] => stdClass Object
+                      (
+                          [Id] => 15537049V
+                          [AirLine] => کیش ایر
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2150
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => y97150
+                          [AirLineEnglish] => Y9
+                          [ClassType] => E
+                          [ClassPrice] => 2294000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2294000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : V
+                          [PriceChild] =>  قیمت کودک : 1187000
+                          [PriceInfant] =>  قیمت نوزاد : 302000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15537049
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => Y9
+                                  [P1] => 40
+                                  [P2] => 20
+                                  [P3] => 0
+                                  [P4] => 0
+                                  [P5] => 0
+                                  [PS1] => از 24 ساعت قبل از پرواز به بعد
+                                  [PS2] => تا 24 ساعت قبل از پرواز
+                                  [PS3] => 
+                                  [PS4] => 
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 20%
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 623,000
+                          [TicketOverPrice] => 2,294,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [7] => stdClass Object
+                      (
+                          [Id] => 15537050Q
+                          [AirLine] => کیش ایر
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2150
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => y97150
+                          [AirLineEnglish] => Y9
+                          [ClassType] => E
+                          [ClassPrice] => 1925000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1925000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Q
+                          [PriceChild] =>  قیمت کودک : 1003000
+                          [PriceInfant] =>  قیمت نوزاد : 265000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15537050
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => Y9
+                                  [P1] => 50
+                                  [P2] => 25
+                                  [P3] => 0
+                                  [P4] => 0
+                                  [P5] => 0
+                                  [PS1] => از 24 ساعت قبل از پرواز به بعد
+                                  [PS2] => تا 24 ساعت قبل از پرواز
+                                  [PS3] => 
+                                  [PS4] => 
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 50%
+                          [P2] => 25%
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 254,000
+                          [TicketOverPrice] => 1,925,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [8] => stdClass Object
+                      (
+                          [Id] => 15625777Y
+                          [AirLine] => کیش ایر
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2145
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => y97150
+                          [AirLineEnglish] => Y9
+                          [ClassType] => E
+                          [ClassPrice] => 1898000ریال
+                          [ClassCount] => 5
+                          [Type] => E S
+                          [ClassDetails] => فقط 5 نفر
+                          [kind] => اکونومی
+                          [price] => 1898000
+                          [DayOfWeek] => جمعه
+                          [count] => 5
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1898000
+                          [PriceInfant] =>  قیمت نوزاد : 398000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15625777
+                          [Description] => 1000073
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => Y9
+                                  [P1] => 40
+                                  [P2] => 20
+                                  [P3] => 0
+                                  [P4] => 0
+                                  [P5] => 0
+                                  [PS1] => از 24 ساعت قبل از پرواز به بعد
+                                  [PS2] => تا 24 ساعت قبل از پرواز
+                                  [PS3] => 
+                                  [PS4] => 
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 20%
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 1000073
+                          [SellerReference] => 0
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 227,000
+                          [TicketOverPrice] => 1,898,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [9] => stdClass Object
+                      (
+                          [Id] => 15936085Y
+                          [AirLine] => کیش ایر
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2145
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => y97150
+                          [AirLineEnglish] => Y9
+                          [ClassType] => E
+                          [ClassPrice] => 2198000ریال
+                          [ClassCount] => 4
+                          [Type] => E S
+                          [ClassDetails] => فقط 4 نفر
+                          [kind] => اکونومی
+                          [price] => 2198000
+                          [DayOfWeek] => جمعه
+                          [count] => 4
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2198000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15936085
+                          [Description] => 178
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => Y9
+                                  [P1] => 40
+                                  [P2] => 20
+                                  [P3] => 0
+                                  [P4] => 0
+                                  [P5] => 0
+                                  [PS1] => از 24 ساعت قبل از پرواز به بعد
+                                  [PS2] => تا 24 ساعت قبل از پرواز
+                                  [PS3] => 
+                                  [PS4] => 
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 20%
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 178
+                          [SellerReference] => 70564
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 527,000
+                          [TicketOverPrice] => 2,198,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [10] => stdClass Object
+                      (
+                          [Id] => 15062926Y
+                          [AirLine] => کیش ایر
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2115
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => y97150
+                          [AirLineEnglish] => Y9
+                          [ClassType] => E
+                          [ClassPrice] => 1848000ریال
+                          [ClassCount] => 3
+                          [Type] => E S
+                          [ClassDetails] => فقط 3 نفر
+                          [kind] => اکونومی
+                          [price] => 1848000
+                          [DayOfWeek] => جمعه
+                          [count] => 3
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1848000
+                          [PriceInfant] =>  قیمت نوزاد : 698000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15062926
+                          [Description] => 1000003
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => Y9
+                                  [P1] => 40
+                                  [P2] => 20
+                                  [P3] => 0
+                                  [P4] => 0
+                                  [P5] => 0
+                                  [PS1] => از 24 ساعت قبل از پرواز به بعد
+                                  [PS2] => تا 24 ساعت قبل از پرواز
+                                  [PS3] => 
+                                  [PS4] => 
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 20%
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 1000003
+                          [SellerReference] => 66565
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 177,000
+                          [TicketOverPrice] => 1,848,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [11] => stdClass Object
+                      (
+                          [Id] => 15127703D
+                          [AirLine] => آسمان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2110
+                          [ArrivalTime] => ساعت فرود : 22:35  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3787
+                          [AirLineEnglish] => EP
+                          [ClassType] => B
+                          [ClassPrice] => 3504000ریال
+                          [ClassCount] => 9
+                          [Type] => B S
+                          [ClassDetails] => موجود
+                          [kind] => بیزنس
+                          [price] => 3504000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : D
+                          [PriceChild] =>  قیمت کودک : 2649000
+                          [PriceInfant] =>  قیمت نوزاد : 413000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15127703
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 15
+                                  [P2] => 15
+                                  [P3] => 15
+                                  [P4] => 15
+                                  [P5] => 30
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 15%
+                          [P2] => 15%
+                          [P3] => 15%
+                          [P4] => 15%
+                          [P5] => 30%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,833,000
+                          [TicketOverPrice] => 3,504,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [12] => stdClass Object
+                      (
+                          [Id] => 15127710U
+                          [AirLine] => آسمان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2110
+                          [ArrivalTime] => ساعت فرود : 22:35  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3787
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 2402000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2402000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : U
+                          [PriceChild] =>  قیمت کودک : 1241000
+                          [PriceInfant] =>  قیمت نوزاد : 303000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15127710
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 731,000
+                          [TicketOverPrice] => 2,402,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [13] => stdClass Object
+                      (
+                          [Id] => 15122765R
+                          [AirLine] => آسمان
+                          [Aircraft] => Fokker 100
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2045
+                          [ArrivalTime] => ساعت فرود : 22:10  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3778
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 2200000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2200000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : R
+                          [PriceChild] =>  قیمت کودک : 1140000
+                          [PriceInfant] =>  قیمت نوزاد : 282000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15122765
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 529,000
+                          [TicketOverPrice] => 2,200,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [14] => stdClass Object
+                      (
+                          [Id] => 15006578Y
+                          [AirLine] => تابان
+                          [Aircraft] => MD-80
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 2030
+                          [ArrivalTime] => ساعت فرود : 21:45
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => hh6296
+                          [AirLineEnglish] => HH
+                          [ClassType] => E
+                          [ClassPrice] => 2098000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2098000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2098000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15006578
+                          [Description] => 900049
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => HH
+                                  [P1] => 20
+                                  [P2] => 30
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 30%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 900049
+                          [SellerReference] => iranianbastan
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 427,000
+                          [TicketOverPrice] => 2,098,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [15] => stdClass Object
+                      (
+                          [Id] => 15697072Y
+                          [AirLine] => کارون
+                          [Aircraft] => Fokker 100
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1800
+                          [ArrivalTime] => ساعت فرود : 19:15
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => nv2513
+                          [AirLineEnglish] => NV
+                          [ClassType] => E
+                          [ClassPrice] => 1998000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1998000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1998000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15697072
+                          [Description] => 900033
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => NV
+                                  [P1] => 30
+                                  [P2] => 30
+                                  [P3] => 50
+                                  [P4] => 65
+                                  [P5] => 0
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => از 12 ظهر روز1 قبل پرواز تا 2 ساعت مانده به پرواز
+                                  [PS4] => از 2 ساعت مانده به پرواز به بعد
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 30%
+                          [P2] => 30%
+                          [P3] => 50%
+                          [P4] => 65%
+                          [P5] => -
+                          [SellerId] => 900033
+                          [SellerReference] => arna
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 327,000
+                          [TicketOverPrice] => 1,998,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [16] => stdClass Object
+                      (
+                          [Id] => 15847667Y
+                          [AirLine] => کارون
+                          [Aircraft] => Fokker 100
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1800
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => nv2513
+                          [AirLineEnglish] => NV
+                          [ClassType] => E
+                          [ClassPrice] => 1998000ریال
+                          [ClassCount] => 6
+                          [Type] => E S
+                          [ClassDetails] => فقط 6 نفر
+                          [kind] => اکونومی
+                          [price] => 1998000
+                          [DayOfWeek] => جمعه
+                          [count] => 6
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1998000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15847667
+                          [Description] => 10000117
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => NV
+                                  [P1] => 30
+                                  [P2] => 30
+                                  [P3] => 50
+                                  [P4] => 65
+                                  [P5] => 0
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => از 12 ظهر روز1 قبل پرواز تا 2 ساعت مانده به پرواز
+                                  [PS4] => از 2 ساعت مانده به پرواز به بعد
+                                  [PS5] => 
+                              )
+      
+                          [P1] => 30%
+                          [P2] => 30%
+                          [P3] => 50%
+                          [P4] => 65%
+                          [P5] => -
+                          [SellerId] => 10000117
+                          [SellerReference] => 16
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 327,000
+                          [TicketOverPrice] => 1,998,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [17] => stdClass Object
+                      (
+                          [Id] => 15062922Y
+                          [AirLine] => آتا
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1640
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => i35624
+                          [AirLineEnglish] => I3
+                          [ClassType] => E
+                          [ClassPrice] => 2248000ریال
+                          [ClassCount] => 0
+                          [Type] => E S
+                          [ClassDetails] => ظرفیت تکمیل
+                          [kind] => اکونومی
+                          [price] => 2248000
+                          [DayOfWeek] => جمعه
+                          [count] => 0
+                          [ticketClass] => 
+                          [PriceChild] => 
+                          [PriceInfant] => 
+                          [isAvailable] => 
+                          [uniqId] => 15062922
+                          [Description] => 1000003
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => I3
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 1000003
+                          [SellerReference] => 66512
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 577,000
+                          [TicketOverPrice] => 2,248,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [18] => stdClass Object
+                      (
+                          [Id] => 15575464Y
+                          [AirLine] => آتا
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1640
+                          [ArrivalTime] => ساعت فرود : 18:10
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => i35624
+                          [AirLineEnglish] => I3
+                          [ClassType] => E
+                          [ClassPrice] => 2248000ریال
+                          [ClassCount] => 0
+                          [Type] => E S
+                          [ClassDetails] => ظرفیت تکمیل
+                          [kind] => اکونومی
+                          [price] => 2248000
+                          [DayOfWeek] => جمعه
+                          [count] => 0
+                          [ticketClass] => 
+                          [PriceChild] => 
+                          [PriceInfant] => 
+                          [isAvailable] => 
+                          [uniqId] => 15575464
+                          [Description] => 900002
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => I3
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 900002
+                          [SellerReference] => sepidparvaz
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 577,000
+                          [TicketOverPrice] => 2,248,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [19] => stdClass Object
+                      (
+                          [Id] => 15104854S
+                          [AirLine] => آسمان
+                          [Aircraft] => Fokker 100
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1600
+                          [ArrivalTime] => ساعت فرود : 17:25  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3776
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 2900000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2900000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : S
+                          [PriceChild] =>  قیمت کودک : 1490000
+                          [PriceInfant] =>  قیمت نوزاد : 352000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15104854
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,229,000
+                          [TicketOverPrice] => 2,900,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [20] => stdClass Object
+                      (
+                          [Id] => 15931471Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1500
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4308
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 4098000ریال
+                          [ClassCount] => 2
+                          [Type] => E S
+                          [ClassDetails] => فقط 2 نفر
+                          [kind] => اکونومی
+                          [price] => 4098000
+                          [DayOfWeek] => جمعه
+                          [count] => 2
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 4098000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15931471
+                          [Description] => 119
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 119
+                          [SellerReference] => 43941
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 2,427,000
+                          [TicketOverPrice] => 4,098,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [21] => stdClass Object
+                      (
+                          [Id] => 15512586Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1500
+                          [ArrivalTime] => ساعت فرود : 16:20
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4308
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 2398000ریال
+                          [ClassCount] => 5
+                          [Type] => E S
+                          [ClassDetails] => فقط 5 نفر
+                          [kind] => اکونومی
+                          [price] => 2398000
+                          [DayOfWeek] => جمعه
+                          [count] => 5
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2398000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15512586
+                          [Description] => 900036
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 900036
+                          [SellerReference] => dayan
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 727,000
+                          [TicketOverPrice] => 2,398,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [22] => stdClass Object
+                      (
+                          [Id] => 15935585Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1500
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4308
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 3598000ریال
+                          [ClassCount] => 3
+                          [Type] => E S
+                          [ClassDetails] => فقط 3 نفر
+                          [kind] => اکونومی
+                          [price] => 3598000
+                          [DayOfWeek] => جمعه
+                          [count] => 3
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 3598000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15935585
+                          [Description] => 183
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 183
+                          [SellerReference] => 8926
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,927,000
+                          [TicketOverPrice] => 3,598,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [23] => stdClass Object
+                      (
+                          [Id] => 15936931Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1500
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4308
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 2398000ریال
+                          [ClassCount] => 4
+                          [Type] => E S
+                          [ClassDetails] => فقط 4 نفر
+                          [kind] => اکونومی
+                          [price] => 2398000
+                          [DayOfWeek] => جمعه
+                          [count] => 4
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2398000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15936931
+                          [Description] => 196
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 196
+                          [SellerReference] => 18938
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 727,000
+                          [TicketOverPrice] => 2,398,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [24] => stdClass Object
+                      (
+                          [Id] => 15025471Y
+                          [AirLine] => ايرتور
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1345
+                          [ArrivalTime] => ساعت فرود : 15:00
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => b9985
+                          [AirLineEnglish] => B9
+                          [ClassType] => E
+                          [ClassPrice] => 1948000ریال
+                          [ClassCount] => 6
+                          [Type] => E S
+                          [ClassDetails] => فقط 6 نفر
+                          [kind] => اکونومی
+                          [price] => 1948000
+                          [DayOfWeek] => جمعه
+                          [count] => 6
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1948000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15025471
+                          [Description] => 900058
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => B9
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 900058
+                          [SellerReference] => markaztour
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 277,000
+                          [TicketOverPrice] => 1,948,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [25] => stdClass Object
+                      (
+                          [Id] => 15936440Y
+                          [AirLine] => ايرتور
+                          [Aircraft] => MD-82
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1345
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => b9985
+                          [AirLineEnglish] => B9
+                          [ClassType] => E
+                          [ClassPrice] => 1948000ریال
+                          [ClassCount] => 4
+                          [Type] => E S
+                          [ClassDetails] => فقط 4 نفر
+                          [kind] => اکونومی
+                          [price] => 1948000
+                          [DayOfWeek] => جمعه
+                          [count] => 4
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1948000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15936440
+                          [Description] => 206
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => B9
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 206
+                          [SellerReference] => 12568
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 277,000
+                          [TicketOverPrice] => 1,948,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [26] => stdClass Object
+                      (
+                          [Id] => 15574802J
+                          [AirLine] => ایران ایر
+                          [Aircraft] => Airbus A320
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1340
+                          [ArrivalTime] => ساعت فرود : 15:10
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ir427
+                          [AirLineEnglish] => IR
+                          [ClassType] => B
+                          [ClassPrice] => 5168000ریال
+                          [ClassCount] => 7
+                          [Type] => B S
+                          [ClassDetails] => فقط 7 نفر
+                          [kind] => بیزنس
+                          [price] => 5168000
+                          [DayOfWeek] => جمعه
+                          [count] => 7
+                          [ticketClass] =>  شناسه نرخی : J
+                          [PriceChild] =>  قیمت کودک : 2624000
+                          [PriceInfant] =>  قیمت نوزاد : 579000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15574802
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => IR
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 40
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 40%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 3,497,000
+                          [TicketOverPrice] => 5,168,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [27] => stdClass Object
+                      (
+                          [Id] => 15574806Y
+                          [AirLine] => ایران ایر
+                          [Aircraft] => Airbus A320
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1340
+                          [ArrivalTime] => ساعت فرود : 15:10
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ir427
+                          [AirLineEnglish] => IR
+                          [ClassType] => E
+                          [ClassPrice] => 3578000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 3578000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1829000
+                          [PriceInfant] =>  قیمت نوزاد : 420000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15574806
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => IR
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 40
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 40%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,907,000
+                          [TicketOverPrice] => 3,578,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [28] => stdClass Object
+                      (
+                          [Id] => 15127665D
+                          [AirLine] => آسمان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1315
+                          [ArrivalTime] => ساعت فرود : 14:40  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3785
+                          [AirLineEnglish] => EP
+                          [ClassType] => B
+                          [ClassPrice] => 3504000ریال
+                          [ClassCount] => 9
+                          [Type] => B S
+                          [ClassDetails] => موجود
+                          [kind] => بیزنس
+                          [price] => 3504000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : D
+                          [PriceChild] =>  قیمت کودک : 2649000
+                          [PriceInfant] =>  قیمت نوزاد : 413000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15127665
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 15
+                                  [P2] => 15
+                                  [P3] => 15
+                                  [P4] => 15
+                                  [P5] => 30
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 15%
+                          [P2] => 15%
+                          [P3] => 15%
+                          [P4] => 15%
+                          [P5] => 30%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,833,000
+                          [TicketOverPrice] => 3,504,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [29] => stdClass Object
+                      (
+                          [Id] => 15127672U
+                          [AirLine] => آسمان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1315
+                          [ArrivalTime] => ساعت فرود : 14:40  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3785
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 2402000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2402000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : U
+                          [PriceChild] =>  قیمت کودک : 1241000
+                          [PriceInfant] =>  قیمت نوزاد : 303000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15127672
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 731,000
+                          [TicketOverPrice] => 2,402,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [30] => stdClass Object
+                      (
+                          [Id] => 15858608S
+                          [AirLine] => ماهان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1150
+                          [ArrivalTime] => ساعت فرود : 13:15
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => w51088
+                          [AirLineEnglish] => W5
+                          [ClassType] => E
+                          [ClassPrice] => 3424000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => 
+                          [price] => 3424000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : S
+                          [PriceChild] =>  قیمت کودک : 2588000
+                          [PriceInfant] =>  قیمت نوزاد : 405000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15858608
+                          [Description] => 
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => W5
+                                  [P1] => 10
+                                  [P2] => 10
+                                  [P3] => 30
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبال از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 10%
+                          [P2] => 10%
+                          [P3] => 30%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => M
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,753,000
+                          [TicketOverPrice] => 3,424,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [31] => stdClass Object
+                      (
+                          [Id] => 15932409Y
+                          [AirLine] => آتا
+                          [Aircraft] => MD-83
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 1020
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => i35632
+                          [AirLineEnglish] => I3
+                          [ClassType] => E
+                          [ClassPrice] => 1998000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 1998000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1998000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15932409
+                          [Description] => 113
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => I3
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 40
+                                  [P4] => 50
+                                  [P5] => 50
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 40%
+                          [P4] => 50%
+                          [P5] => 50%
+                          [SellerId] => 113
+                          [SellerReference] => 91731
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 327,000
+                          [TicketOverPrice] => 1,998,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [32] => stdClass Object
+                      (
+                          [Id] => 15127631D
+                          [AirLine] => آسمان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0725
+                          [ArrivalTime] => ساعت فرود : 08:50  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3781
+                          [AirLineEnglish] => EP
+                          [ClassType] => B
+                          [ClassPrice] => 3504000ریال
+                          [ClassCount] => 9
+                          [Type] => B S
+                          [ClassDetails] => موجود
+                          [kind] => بیزنس
+                          [price] => 3504000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : D
+                          [PriceChild] =>  قیمت کودک : 2649000
+                          [PriceInfant] =>  قیمت نوزاد : 413000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15127631
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 15
+                                  [P2] => 15
+                                  [P3] => 15
+                                  [P4] => 15
+                                  [P5] => 30
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 15%
+                          [P2] => 15%
+                          [P3] => 15%
+                          [P4] => 15%
+                          [P5] => 30%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 1,833,000
+                          [TicketOverPrice] => 3,504,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [33] => stdClass Object
+                      (
+                          [Id] => 15127638U
+                          [AirLine] => آسمان
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0725
+                          [ArrivalTime] => ساعت فرود : 08:50  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3781
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 2402000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2402000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : U
+                          [PriceChild] =>  قیمت کودک : 1241000
+                          [PriceInfant] =>  قیمت نوزاد : 303000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15127638
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 731,000
+                          [TicketOverPrice] => 2,402,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [34] => stdClass Object
+                      (
+                          [Id] => 15246581Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0600
+                          [ArrivalTime] => ساعت فرود : 07:30
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4302
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 2098000ریال
+                          [ClassCount] => 5
+                          [Type] => E S
+                          [ClassDetails] => فقط 5 نفر
+                          [kind] => اکونومی
+                          [price] => 2098000
+                          [DayOfWeek] => جمعه
+                          [count] => 5
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2098000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15246581
+                          [Description] => 900002
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 900002
+                          [SellerReference] => sepidparvaz
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 427,000
+                          [TicketOverPrice] => 2,098,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [35] => stdClass Object
+                      (
+                          [Id] => 15850189O
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0600
+                          [ArrivalTime] => ساعت فرود : 07:20
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4302
+                          [AirLineEnglish] => SR
+                          [ClassType] => Z
+                          [ClassPrice] => 1898000ریال
+                          [ClassCount] => 4
+                          [Type] => Z S
+                          [ClassDetails] => فقط 4 نفر
+                          [kind] => نامشخص
+                          [price] => 1898000
+                          [DayOfWeek] => جمعه
+                          [count] => 4
+                          [ticketClass] =>  شناسه نرخی : O
+                          [PriceChild] =>  قیمت کودک : 1898000
+                          [PriceInfant] =>  قیمت نوزاد : 600000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15850189
+                          [Description] => 900036
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => 
+                          [P1] => -
+                          [P2] => -
+                          [P3] => -
+                          [P4] => -
+                          [P5] => -
+                          [SellerId] => 900036
+                          [SellerReference] => dayan
+                          [SystemKey] => R
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 227,000
+                          [TicketOverPrice] => 1,898,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [36] => stdClass Object
+                      (
+                          [Id] => 15883864Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0600
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4302
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 5088000ریال
+                          [ClassCount] => 0
+                          [Type] => E S
+                          [ClassDetails] => ظرفیت تکمیل
+                          [kind] => اکونومی
+                          [price] => 5088000
+                          [DayOfWeek] => جمعه
+                          [count] => 0
+                          [ticketClass] => 
+                          [PriceChild] => 
+                          [PriceInfant] => 
+                          [isAvailable] => 
+                          [uniqId] => 15883864
+                          [Description] => 1000094
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 1000094
+                          [SellerReference] => 0
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 3,417,000
+                          [TicketOverPrice] => 5,088,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [37] => stdClass Object
+                      (
+                          [Id] => 15931455Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0600
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4302
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 2098000ریال
+                          [ClassCount] => 5
+                          [Type] => E S
+                          [ClassDetails] => فقط 5 نفر
+                          [kind] => اکونومی
+                          [price] => 2098000
+                          [DayOfWeek] => جمعه
+                          [count] => 5
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 2098000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15931455
+                          [Description] => 119
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 119
+                          [SellerReference] => 43881
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 427,000
+                          [TicketOverPrice] => 2,098,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [38] => stdClass Object
+                      (
+                          [Id] => 15936909Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0600
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4302
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 1898000ریال
+                          [ClassCount] => 5
+                          [Type] => E S
+                          [ClassDetails] => فقط 5 نفر
+                          [kind] => اکونومی
+                          [price] => 1898000
+                          [DayOfWeek] => جمعه
+                          [count] => 5
+                          [ticketClass] =>  شناسه نرخی : Y
+                          [PriceChild] =>  قیمت کودک : 1898000
+                          [PriceInfant] =>  قیمت نوزاد : 598000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15936909
+                          [Description] => 196
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 196
+                          [SellerReference] => 18894
+                          [SystemKey] => X
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 227,000
+                          [TicketOverPrice] => 1,898,000
+                          [CharterOverPrice] => 1
+                      )
+      
+                  [39] => stdClass Object
+                      (
+                          [Id] => 15884534Y
+                          [AirLine] => سپهران
+                          [Aircraft] => 
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0545
+                          [ArrivalTime] => 
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => sr4326
+                          [AirLineEnglish] => SR
+                          [ClassType] => E
+                          [ClassPrice] => 5088000ریال
+                          [ClassCount] => 0
+                          [Type] => E S
+                          [ClassDetails] => ظرفیت تکمیل
+                          [kind] => اکونومی
+                          [price] => 5088000
+                          [DayOfWeek] => جمعه
+                          [count] => 0
+                          [ticketClass] => 
+                          [PriceChild] => 
+                          [PriceInfant] => 
+                          [isAvailable] => 
+                          [uniqId] => 15884534
+                          [Description] => 1000094
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => SR
+                                  [P1] => 40
+                                  [P2] => 40
+                                  [P3] => 50
+                                  [P4] => 50
+                                  [P5] => 60
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 40%
+                          [P2] => 40%
+                          [P3] => 50%
+                          [P4] => 50%
+                          [P5] => 60%
+                          [SellerId] => 1000094
+                          [SellerReference] => 0
+                          [SystemKey] => S
+                          [SystemKeyName] => چارتر
+                          [SpecialServices] => 
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 3,417,000
+                          [TicketOverPrice] => 5,088,000
+                          [CharterOverPrice] => 
+                      )
+      
+                  [40] => stdClass Object
+                      (
+                          [Id] => 15076612R
+                          [AirLine] => آسمان
+                          [Aircraft] => Fokker 100
+                          [LeaveDate] => 03/30/2018
+                          [LeaveDateFa] => 1397/1/10
+                          [LeaveTime] => 0500
+                          [ArrivalTime] => ساعت فرود : 06:25  
+                          [From] => SYZ
+                          [To] => THR
+                          [FromShowName] => شیراز
+                          [ToShowName] => تهران
+                          [FlightNumber] => ep3768
+                          [AirLineEnglish] => EP
+                          [ClassType] => E
+                          [ClassPrice] => 2200000ریال
+                          [ClassCount] => 9
+                          [Type] => E S
+                          [ClassDetails] => موجود
+                          [kind] => اکونومی
+                          [price] => 2200000
+                          [DayOfWeek] => جمعه
+                          [count] => 9
+                          [ticketClass] =>  شناسه نرخی : R
+                          [PriceChild] =>  قیمت کودک : 1140000
+                          [PriceInfant] =>  قیمت نوزاد : 282000
+                          [isAvailable] => isAvailable
+                          [uniqId] => 15076612
+                          [Description] => Gabriel
+                          [HasConnection] => 
+                          [UrlLink] => 
+                          [Order_Index] => 0
+                          [CRCN] => stdClass Object
+                              (
+                                  [AirlineCode] => EP
+                                  [P1] => 20
+                                  [P2] => 20
+                                  [P3] => 20
+                                  [P4] => 20
+                                  [P5] => 40
+                                  [PS1] => از زمان صدور تا 12 ظهر 3 روز قبل از پرواز
+                                  [PS2] => تا 12 ظهر 1 روز قبل از پرواز
+                                  [PS3] => تا 3 ساعت قبل از پرواز
+                                  [PS4] => از 3 ساعت تا 30 دقیقه قبل از پرواز
+                                  [PS5] => از 30 دقیقه قبل از پرواز به بعد
+                              )
+      
+                          [P1] => 20%
+                          [P2] => 20%
+                          [P3] => 20%
+                          [P4] => 20%
+                          [P5] => 40%
+                          [SellerId] => 
+                          [SellerReference] => 
+                          [SystemKey] => G
+                          [SystemKeyName] => سیستمی
+                          [SpecialServices] => دارد
+                          [TicketOrginalPrice] => 1,671,000
+                          [TicketCharterPrice] => 529,000
+                          [TicketOverPrice] => 2,200,000
+                          [CharterOverPrice] => 
+                      )
+      
+              )
+      
+          [FaranegarAvailableCount] => 41
+          [Show] => -1
+          [SearchFlightId] => 166820177
+      )
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

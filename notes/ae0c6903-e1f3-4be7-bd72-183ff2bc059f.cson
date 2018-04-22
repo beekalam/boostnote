@@ -1,0 +1,22 @@
+createdAt: "2018-04-03T04:46:16.804Z"
+updatedAt: "2018-04-03T04:46:54.232Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "ubuntu"
+content: '''
+  # ubuntu
+  ## sudo timeout
+  Run the following command in a Terminal:
+  sudo visudo
+  
+  Scroll down to the line that looks like this:
+  Defaults        env_reset
+  
+  and change it to this:
+  Defaults        env_reset,timestamp_timeout=30
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

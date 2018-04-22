@@ -1,0 +1,26 @@
+createdAt: "2018-04-16T14:56:57.536Z"
+updatedAt: "2018-04-16T03:05:14.656Z"
+content: '''
+  # error and debug
+  
+  ## disable deprecated function notices
+  ```php
+  <?php
+  error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
+  ```
+  
+  This tells your application to show all errors EXCEPT for Notices and Deprecation errors.  Obviously you can show Notices if you prefer by removing & ~E_NOTICE from that function.
+  
+  ## turn off error reporting
+  ```php
+  <?php
+  error_reporting(0);
+  @ini_set('display_errors', 0);
+  ```
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "error and debug"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,54 @@
+createdAt: "2018-04-16T14:56:57.552Z"
+updatedAt: "2018-04-16T03:05:20.882Z"
+content: '''
+  # form
+  ## double column form `bootstrap 4`
+  ```html
+  <form class="form">
+    <div class="row">
+  
+        <div class="form-group col-6">
+            <div class="row">
+                <label for="first_name" class="control-label col-sm-3">نام :</label>
+                <div class="col-sm-9">
+                    <input type="text" id="first_name" name="first_name" 
+                        class="form-control"
+                        value="<?php echo $first_name; ?>">
+                </div>
+            </div>
+        </div>
+  
+        <div class="form-group col-6">
+            <div class="row">
+                <label for="first_name" class="control-label col-sm-3">نام :</label>
+                <div class="col-sm-9">
+                    <input type="text" id="first_name" name="first_name" 
+                        class="form-control"
+                        value="<?php echo $first_name; ?>">
+                </div>
+            </div>
+        </div>
+  
+  
+        <div class="form-group col-6">
+            <div class="row">
+                <label for="first_name" class="control-label col-sm-3">نام :</label>
+                <div class="col-sm-9">
+                    <input type="text" id="first_name" name="first_name" 
+                        class="form-control"
+                        value="<?php echo $first_name; ?>">
+                </div>
+            </div>
+        </div>
+  
+    </div>
+  
+  </form>
+  ```                        
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "form"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

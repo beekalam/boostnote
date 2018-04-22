@@ -1,0 +1,98 @@
+createdAt: "2018-03-28T04:03:57.503Z"
+updatedAt: "2018-04-16T05:58:16.145Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "codeigniter"
+content: '''
+  # codeigniter
+  
+  ## using composer packages in codeigniter
+  :smile:
+  
+  ```php
+  /*
+   * --------------------------------------------------------------------
+   * LOAD THE BOOTSTRAP FILE
+   * --------------------------------------------------------------------
+   *
+   * And away we go...
+   *
+   */
+  // Composer Autoloader
+  require FCPATH . 'vendor/autoload.php';
+  
+  require_once BASEPATH.'core/CodeIgniter.php';
+  
+  /* End of file index.php */
+  ```
+  
+  ## email
+  ### sample email script
+  `email.php` in `config` folder
+  
+  ```php
+  $config['protocol'] = 'smtp';
+  $config['smtp_host'] = 'mail.tripz.ir';
+  $config['smtp_user'] = 'noreplay@tripz.ir';
+  $config['smtp_pass'] = 'tripz@098';
+  $config['smtp_port'] = '587';
+  $config['charset'] = 'iso-8859-1';
+  $config['wordwrap'] = TRUE;
+  ```
+  
+  sending the email
+  ```php
+  $this->load->library('email');
+  $this->email->from('noreplay@tripz.ir', 'activation@tripz.ir');
+  $this->email->to("$email");
+  $this->email->cc('another@another-example.com');
+  $this->email->bcc('them@their-example.com');
+  
+  $this->email->subject('Email Test');
+  $this->email->message('Testing the email class. activation link:'.$activation_link);
+  
+  $this->email->send();
+  ```
+  
+  using inline config
+  ```php
+  $config['protocol'] = 'sendmail';
+  $config['mailpath'] = '/usr/sbin/sendmail';
+  $config['charset'] = 'iso-8859-1';
+  $config['wordwrap'] = TRUE;
+  
+  $this->email->initialize($config);
+  ```
+  
+  
+  # library
+  
+  ## Passing Parameters When Initializing Your Class
+  In the library loading method you can dynamically pass data as an array via the second parameter and it will be passed to your class constructor:
+  ```php
+  <?php
+  $params = array('type' => 'large', 'color' => 'red');
+  $this->load->library('someclass', $params);
+  ```
+  
+  If you use this feature you must set up your class constructor to expect data:
+  ```php
+  <?php defined('BASEPATH') OR exit('No direct script access allowed');
+  
+  class Someclass {
+  
+          public function __construct($params)
+          {
+                  // Do something with $params
+          }
+  }
+  ```
+  You can also pass parameters stored in a config file. Simply create a config file named identically to the class file name and store it in your application/config/ directory. Note that if you dynamically pass parameters as described above, the config file option will not be available.
+  
+  ## resources
+  [GitHub - codeigniter-id/awesome-codeigniter: A list of awesome Codeigniter core, helpers, hooks, language, libraries, third party and other cool resources for CodeIgniter](https://github.com/codeigniter-id/awesome-codeigniter#web-services)
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,74 @@
+createdAt: "2018-04-16T14:56:57.784Z"
+updatedAt: "2018-04-16T03:05:24.341Z"
+content: '''
+  ```cpp
+  static void LIBUSB_CALL callback(struct libusb_transfer *utp)
+  {
+  	write(1, utp->buffer, utp->actual_length);
+  	libusb_submit_transfer(utp); /* recycle */
+  }
+  main()
+  {
+  	libusb_context		*uctxp;
+  	libusb_device_handle 	*udevp;
+  	struct libusb_device	*udp;
+  	struct libusb_transfer	*utp;
+  	int	n_read;
+  
+  	/* init */
+  	libusb_init(&uctxp);
+  	udevp = libusb_open_device_with_vid_pid(uctxp, 0x0925, 0x3881); /* Sigrok - Saleae clone */
+  	udp = libusb_get_device(udevp);
+  	libusb_claim_interface(udevp, 0);
+  
+  	/* prepare asynchronous transfers */
+  	utp = libusb_alloc_transfer(0);
+  	libusb_fill_bulk_transfer(utp, udevp, EP_BULK, async_buf, sizeof(async_buf), callback, 0, 2000);
+  	libusb_submit_transfer(utp);
+  
+  	libusb_control_transfer(udevp, EP_START, CMD_START, 0, 0, cmd_start, sizeof(cmd_start), 100);
+  
+  	while (1)
+  	{
+  		libusb_bulk_transfer(udevp, EP_BULK, sync_buf, sizeof(sync_buf), &n_read, 1000);
+  		write(2, sync_buf, n_read);
+  	}
+  }
+  ```
+  Vendor:Device = 08ff:0009
+  ...............................
+    - Serial Number: 08FF20140315
+    Configuration:
+      wTotalLength:         34
+      bNumInterfaces:       1
+      bConfigurationValue:  1
+      iConfiguration:       0
+      bmAttributes:         a0h
+      MaxPower:             50
+      Interface:
+        bInterfaceNumber:   0
+        bAlternateSetting:  0
+        bNumEndpoints:      1
+        bInterfaceClass:    3
+        bInterfaceSubClass: 1
+        bInterfaceProtocol: 1
+        iInterface:         4
+        Endpoint:
+          bEndpointAddress: 81h
+          bmAttributes:     03h
+          wMaxPacketSize:   8
+          bInterval:        10
+          bRefresh:         0
+          bSynchAddress:    0
+  Dev (bus 1, device 2): 8087 - 0024
+  Vendor:Device = 8087:0024
+  ...............................
+  ```
+  	
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "`cpp"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

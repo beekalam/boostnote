@@ -1,0 +1,60 @@
+createdAt: "2018-04-16T14:56:57.492Z"
+updatedAt: "2018-04-16T03:05:14.668Z"
+content: '''
+  # codeigniter `autoload` composer
+  in `index.php`:
+  ```php
+  <?php
+  require_once __DIR__."/vendor/autoload.php";
+  require_once BASEPATH.'core/CodeIgniter.php';
+  ```
+  
+  # codeigniter write lib class
+  Classes should have this basic prototype:
+  ```php
+  <?php
+  defined('BASEPATH') OR exit('No direct script access allowed');
+  
+  class Someclass {
+  
+          public function some_method()
+          {
+          }
+  }
+  // Using Your Class
+  $this->load->library('someclass');
+  // Passing Parameters When Initializing Your Class
+  // If you use this feature you must set up your class constructor to expect data
+  $params = array('type' => 'large', 'color' => 'red');
+  $this->load->library('someclass', $params);
+  //Utilizing CodeIgniter Resources within Your Library
+  ```
+  
+  # Utilizing CodeIgniter Resources within Your Library
+  First, assign the CodeIgniter object to a variable:
+  ```
+  $CI =& get_instance();
+  ```
+  Once you’ve assigned the object to a variable, you’ll use that variable instead of `$this`:
+  ```
+  $CI =& get_instance();
+  $CI->load->helper('url');
+  $CI->load->library('session');
+  $CI->config->item('base_url');
+  // etc.
+  ```
+  
+  
+  
+  
+  
+  
+  
+  
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "codeigniter autoload composer"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,49 @@
+createdAt: "2018-03-18T13:54:49.822Z"
+updatedAt: "2018-03-18T13:59:01.956Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "JQuery plugin"
+content: '''
+  # JQuery plugin
+  ## basic template for creating plugin
+  
+  ```javascript
+  (function($) {
+    $.fn.logAttr = function(attr) {
+      return this.each(function() {
+        console.log($(this).attr(attr));
+      });
+    };
+  })(jQuery);
+  ```
+  
+  ## Adding options to plugin
+  ```javascript
+  (function($) {
+    $.fn.logAttr = function(opts) {
+      var defaults = {
+        attr: "id",
+        backup: "N/A",
+        useAlert: false
+      };
+      var options = $.extend({}, defaults, opts);
+      return this.each(function() {
+      var val = $(this).attr(options.attr) || options.backup;
+        options.useAlert ? alert(val) : console.log(val);
+      });
+    };
+  })(jQuery);
+  ```
+  example invokation
+  ```javascript
+  $(function() {
+    $("div").logAttr({
+      attr: "rel"
+    });
+  });
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

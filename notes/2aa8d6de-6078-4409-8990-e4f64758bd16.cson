@@ -1,0 +1,141 @@
+createdAt: "2018-03-26T05:27:03.558Z"
+updatedAt: "2018-03-26T05:27:08.581Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "eligasht"
+description: "eligasht"
+snippets: [
+  {
+    name: ""
+    mode: "text"
+    content: '''
+      
+      function test_eligasht(){
+      $q = array();
+      $uagent = random_uagent();
+      
+      $dep = '2018/04/13';
+      $arr = '2018/04/14';
+      
+      $url = "https://www.eligasht.com/Flight/FlightsSearch";
+      $arr=array(
+      "From"=>'THR',
+      "To"=>'SYZ',
+      "Departure"=>$dep,
+      "Arrival"=>$arr,
+      'Trip'=>'oneway',
+      'CabinClass'=>'All',
+      'adults'=>1,
+      'Childs'=>0,
+      'Infants'=>0);
+      // $url .="?From=THR&To=SYZ&Departure=2018%2F06%2F27&Arrival=2018%2F06%2F06&Trip=oneway&CabinClass=All&Adults=1&Childs=0&Infants=0";
+      	$url.='?'. http_build_query($arr);
+      	
+         $ch = curl_init($url); 
+      	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+      	curl_setopt($ch, CURLOPT_POST, true);
+      	curl_setopt ($ch, CURLOPT_COOKIEJAR,'cookie.txt');
+      	// curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
+      	// curl_setopt($ch, CURLOPT_PROXY,"127.0.0.1:8118");
+      	curl_setopt($ch, CURLOPT_USERAGENT, $uagent);
+      	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,30);
+      	curl_setopt($ch, CURLOPT_POSTFIELDS,$q);
+      	// curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+      		// 'Content-Type: application/json'));
+      	$output = curl_exec($ch);
+      	
+      	if(curl_error($ch))
+      	{
+      		echo 'error:' . curl_error($ch);
+      	}
+      	// Read the session saved in the cookie file
+      
+      	curl_close($ch);  
+      // pre($output);
+      	$search_str = '<input id="SearchKey" name="SearchKey" type="hidden" value="';
+      	$pos = strpos($output,$search_str);
+      	$sk="";
+      if($pos !== false){
+      	$end = strpos($output,"/>",$pos);
+      	// pre($end);
+      	$sk = substr($output,$pos+strlen($search_str),36);
+      }
+      // pr($sk);
+      // pr("..................>");
+      $url = "https://www.eligasht.com/Flight/FlightSearchResults";
+      
+      $q=array(
+      	"From"=>"THR",
+      	"To"=>"SYZ",
+      	"Departure"=>$dep,
+      	"Arrival"=>$arr,
+      	"Trip"=>"oneway",
+      	"CabinClass"=>'All',
+      	'Adults'=>1,
+      	'Childs'=>0,
+      	'Infants'=>0
+      );
+      
+      	// sleep(1);
+      	$q=array("SearchKey"=>$sk);
+      	$ch = curl_init($url); 
+      	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+      	curl_setopt($ch, CURLOPT_POST, true);
+      	curl_setopt ($ch, CURLOPT_COOKIEJAR,'cookie.txt');
+      	// curl_setopt($ch, CURLOPT_USERAGENT, $uagent);
+      	// curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST"); 
+      	// curl_setopt($ch, CURLOPT_PROXY,"127.0.0.1:8118");
+      	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,30);
+      	curl_setopt($ch, CURLOPT_POSTFIELDS,$q);
+      	// curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+      		// 'Content-Type: application/json'));
+      	$output = curl_exec($ch);
+      	
+      	if(curl_error($ch))
+      	{
+      		echo 'error:' . curl_error($ch);
+      	}
+      	curl_close($ch);
+      	$output = html_entity_decode($output);
+      	$output = htmlspecialchars_decode($output);
+      	// $outpt = str_replace($output,'\\\\"','"');
+      
+       $output = str_replace('\\\\"','"',$output);
+       $output = str_replace('\\u003c',"<",$output);
+       $output = str_replace('\\u003e',">",$output);
+       $output = str_replace('\\r\\n',PHP_EOL,$output);
+      
+      pre($output);
+      // $response = $curl->get($url,null);
+      // $response = file_get_contents($url);
+      // pre($output);
+      
+      // $res = json_decode($response->body);
+      // $url = $url.'?'.http_build_query($q);
+      // pre($url);
+      
+      // ?From=THR&To=IST&Departure=2018%2F03%2F27&Arrival=2018%2F04%2F06&Trip=oneway&CabinClass=All&Adults=1&Childs=0&Infants=0
+      }
+      // test_eligasht();
+      // echo "................".time()."..........................".PHP_EOL;
+      // $res = alibaba_getcity();
+      // pre($res);
+      
+      // $res = alibaba_get_cheapest_flights("SYZTHR",date('Y-m-d'));
+      // pre($res);
+      
+      // function is_json($string) {
+      //     json_decode($string);
+      //     return json_last_error() === JSON_ERROR_NONE;
+      // }
+      
+      // $res = alibaba_get_flights('SYZ','THR','1396/12/17');
+      // $h = fopen("res.txt",'a');
+      // fwrite($h,print_r($res,true));
+      
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

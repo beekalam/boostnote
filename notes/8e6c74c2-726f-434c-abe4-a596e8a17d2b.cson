@@ -1,0 +1,23 @@
+createdAt: "2018-04-04T08:32:08.476Z"
+updatedAt: "2018-04-04T08:32:33.778Z"
+type: "MARKDOWN_NOTE"
+folder: "554a37a8a3961e45e68d"
+title: "array"
+content: '''
+  # array
+  ## clone array
+  To clone the contents of a given array, all you need to do is call slice, providing 0 as the first argument:
+  ```javascript
+  var clone = myArray.slice(0);
+  ```
+  The code above creates clone of the original array; keep in mind that if objects exist in your array, the references are kept; i.e. the code above does not do a "deep" clone of the array contents. To add clone as a native method to arrays, you'd do something like this:
+  ```javascript
+  Array.prototype.clone = function() {
+  	return this.slice(0);
+  };
+  ```
+  And there you have it! Don't iterate over arrays to clone them if all you need is a naive clone!
+'''
+tags: []
+isStarred: false
+isTrashed: false

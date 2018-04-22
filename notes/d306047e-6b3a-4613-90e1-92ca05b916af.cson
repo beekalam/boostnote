@@ -1,0 +1,16 @@
+createdAt: "2018-03-19T17:34:25.819Z"
+updatedAt: "2018-03-19T17:34:44.308Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "Wget"
+content: '''
+  # Wget
+  ## set user agent
+  ```shell
+  $ wget -U "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" "http://www.google.com"
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,97 @@
+createdAt: "2018-04-16T14:56:57.708Z"
+updatedAt: "2018-04-16T03:04:54.134Z"
+content: '''
+  #
+  Registrado: Mar Jun 30, 2015 11:59 am
+  Reprogramar RFID Pendrive reader, posible?
+  Mensajepor ganjah » Mar Jun 30, 2015 4:22 pm
+  
+  Hola a todos, soy totalmente "neofito" con el tema Rfid y estamos intentando hacer una integración para un proyectillo.
+  
+  Os comento un poco el problema que tengo, por si alguien puede aportarme algo de luz.
+  Necesitábamos un lector RFID de 125Khz EM4100/TK4100 del formato mas pequeño posible, navegando dimos con el siguiente modelo formato pendrive:
+  
+  Con la siguientes características:
+  
+  Tipo de tarjeta: tarjeta de identificación (tarjeta de EM) μEM4100 o su tarjeta de RFID compatible
+  Formato de datos: 10 decimal
+  Frecuencia de operación: 125 kHz
+  Rango de lectura: 3-5 cm (con la etiqueta Tamaño de la antena)
+  Tiempo Reader: 80 ms
+  Interfaz de salida: USB Drive Envío
+  Energía: USB puerto de alimentación
+  Consumo máximo de energía: 100 mW
+  
+  El problema es que el anterior sistema no nos nos comentaron que era Hexadecimal de 10 dígitos y nos han mandado un formato decimal de 10 dígitos y ahora no se si se podría reprogramar este mismo lector( ya que según he investigado también lo tienen en Hex10 ) y no creo que varie mucho por dentro ( desde mi total ignorancia)
+  
+  El uso que necesito es que lea tanto en móvil como en tablet android , los cogidos Hexadeciames de 10 dígitos para poder contabilizar.
+  
+  Envío unas fotos del lector abierto con los integrados que tiene:
+  Los códigos de los integrados son los siguientes:
+  LM358 PMAN
+  OUR8P1213 1446.SZS22 070.1
+  
+  Si me podéis orientar os estaría muy agradecido.
+  Un saludo y gracias de antemano
+  
+  # tmp
+  ray
+  (
+      [Id] => 16006582Y
+      [AirLine] => کاسپین
+      [Aircraft] => MD-80
+      [LeaveDate] => 04/18/2018
+      [LeaveDateFa] => 1397/1/29
+      [LeaveTime] => 2245
+      [ArrivalTime] => 
+      [From] => MHD
+      [To] => THR
+      [FromShowName] => مشهد
+      [ToShowName] => تهران
+      [FlightNumber] => iv029
+      [AirLineEnglish] => IV
+      [ClassType] => E
+      [ClassPrice] => 3898000ریال
+      [ClassCount] => 5
+      [Type] => E S
+      [ClassDetails] => فقط 5 نفر
+      [kind] => اکونومی
+      [price] => 3898000
+      [DayOfWeek] => چهارشنبه
+      [count] => 5
+      [ticketClass] =>  شناسه نرخی : Y
+      [PriceChild] =>  قیمت کودک : 3898000
+      [PriceInfant] =>  قیمت نوزاد : 598000
+      [isAvailable] => isAvailable
+      [uniqId] => 16006582
+      [Description] => 202
+      [HasConnection] => 
+      [UrlLink] => 
+      [Order_Index] => 0
+      [CRCN] => 
+      [P1] => -
+      [P2] => -
+      [P3] => -
+      [P4] => -
+      [P5] => -
+      [SellerId] => 202
+      [SellerReference] => 79850
+      [SystemKey] => X
+      [SystemKeyName] => چارتر
+      [SpecialServices] => دارد
+      [TicketOrginalPrice] => 1,724,000
+      [TicketCharterPrice] => 2,174,000
+      [TicketOverPrice] => 3,898,000
+      [CharterOverPrice] => 1
+      [airline_img] => http://tripz.ir/assets/img/airline/IV.png
+      [leave_hour] => 22:45
+      [to_airport_name] => آبادان
+      [from_airport_name] => مشهد
+  )
+'''
+folder: "2d318b1023a78a20fa3c"
+title: "tmp"
+type: "MARKDOWN_NOTE"
+tags: []
+isStarred: false
+isTrashed: false

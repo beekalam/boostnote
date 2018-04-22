@@ -1,0 +1,133 @@
+createdAt: "2018-03-18T08:43:43.880Z"
+updatedAt: "2018-04-09T11:39:14.597Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "mansouri.js"
+description: "mansouri.js"
+snippets: [
+  {
+    name: ""
+    mode: "JavaScript"
+    content: '''
+      function chkPhone() {
+      	obj=document.getElementById('phone');
+      	num=obj.value;
+      	num=num.replace(/ /g,'');
+      	num=num.replace(/-/g,'');
+      	num=num.replace(/_/g,'');	
+      	document.getElementById('phone').value=num;	
+      	retval=true;
+      	if ( num.substr(0,2) != '09' || num.length< 11 ){
+      		 retval=false;
+      	}
+      	return retval;
+      }
+      
+      function fromUtf8ToEntity (my_str) {
+        my_str = my_str.replace(/([^\\x00-\\x7f])/g,
+          function(s, c, ofs, all) {
+            c = String(c);
+            return "&#"+c.charCodeAt(0)+";";
+          }
+        );
+        return my_str;
+      }
+      
+      
+      function modal_message(modal_title , modal_html){
+          modal_html =modal_html.replace(/@lang@/g, 'lang="fa"');
+              if(! $('#div_modal').length )
+              {
+                    $('body').append('<div id="div_modal" class="modal fade" role="dialog" dir="rtl">  <div class="modal-dialog">    <div class="modal-content">      <div class="modal-header">        <button type="button" class="close" data-dismiss="modal">&times;</button>        <h4 class="modal-title" id="div_modal_title"></h4>      </div>      <div class="modal-body" id="div_modal_note">      </div>      <div class="modal-footer">        <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>      </div>    </div>  </div></div>');                  
+              }
+              $('#div_modal_note').html(modal_html);
+              $('#div_modal_title').html(modal_title);
+              $('#div_modal').modal('show');
+      }
+      
+      
+      
+      
+      function removecomma_string(str){
+        var separator = ",";
+        removed = str;
+        removed = removed.replace ( new RegExp ( separator, "g" ), "" );
+        return removed;
+      }
+      
+      
+      function moneycommasep(ctrl){
+          va = $(ctrl).val() ;
+          $(ctrl).val(va.toEnDigit()); 
+        var separator = ",";
+        var int = ctrl.value.toEnDigit().replace ( new RegExp ( separator, "g" ), "" );
+        var regexp = new RegExp ( "\\\\B(\\\\d{3})(" + separator + "|$)" );
+        do
+        {
+          int = int.replace ( regexp, separator + "$1" );
+        }
+        while ( int.search ( regexp ) >= 0 )
+        ctrl.value = int;
+      }
+      function removecomma(ctrl){
+        var separator = ",";
+        removed = document.getElementById(ctrl).value.replace ( new RegExp ( separator, "g" ), "" );
+        return removed;
+      }
+      function removecomma_obj(ctrl){
+      	if ($(ctrl).length > 0) {
+        var separator = ",";
+        removed = $(ctrl).val().replace ( new RegExp ( separator, "g" ), "" );
+        return removed;
+      	}
+      }
+      
+      
+      var js_load = new Array;
+      function include_once_js(url){
+      	if( ! js_load[url] ){
+      		head = document.getElementsByTagName("head")[0];
+      		script = document.createElement("script");
+      		script.type = "text/javascript";
+      		script.src = url;
+      		head.appendChild( script );
+      		js_load[url]='ok';
+      	}
+      }
+      
+      
+      
+      
+             function getMobileOperatingSystem() {
+      
+              var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      
+              if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+              {
+       if (isFirstPage == 'True')
+                  {
+                      window.location = '/mobile';
+                  }
+      
+              }
+              else if( userAgent.match( /Android/i ) )
+              {
+                  if (isFirstPage == 'True')
+                  {
+                      window.location = '/mobile';
+                  }
+      
+      
+              }
+              else
+              {
+      
+              }
+              }
+      
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

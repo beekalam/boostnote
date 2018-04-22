@@ -1,0 +1,26 @@
+createdAt: "2018-04-08T14:17:28.251Z"
+updatedAt: "2018-04-08T14:21:15.066Z"
+type: "MARKDOWN_NOTE"
+folder: "2d318b1023a78a20fa3c"
+title: "git"
+content: '''
+  # git
+  ## .gitignore
+  ### ignore directory
+  ### exclude all files ending in `.log`
+  ```
+  *.log
+  ```
+  ### exclude all files that contain log
+  ```
+  *.log*
+  ```
+  ### exclude all files in a specific path(such as application build directory)
+  ```
+  /Build/*
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

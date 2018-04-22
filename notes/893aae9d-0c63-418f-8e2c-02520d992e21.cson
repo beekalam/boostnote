@@ -1,0 +1,151 @@
+createdAt: "2018-03-19T07:20:38.073Z"
+updatedAt: "2018-03-19T07:20:44.593Z"
+type: "SNIPPET_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "cheapest flights"
+description: "cheapest flights"
+snippets: [
+  {
+    name: ""
+    mode: "text"
+    content: '''
+         [cheapest_flights] => stdClass Object
+                              (
+                                  [d] => Array
+                                      (
+                                          [0] => stdClass Object
+                                              (
+                                                  [AN] => 15625021
+                                                  [AL] => IV
+                                                  [Price] => 1598000
+                                                  [Price_CHD] => 1598000
+                                                  [Price_INF] => 398000
+                                                  [DepurtureDate] => 2018/03/28
+                                                  [JalaliDate] => 1397/01/08
+                                                  [WeekDay] => چهارشنبه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 4
+                                                  [SystemKey] => S
+                                                  [FromTime] => 0515
+                                                  [ToTime] => 
+                                                  [IsEmpty] => 
+                                              )
+      
+                                          [1] => stdClass Object
+                                              (
+                                                  [AN] => 15935787
+                                                  [AL] => IV
+                                                  [Price] => 1598000
+                                                  [Price_CHD] => 1598000
+                                                  [Price_INF] => 598000
+                                                  [DepurtureDate] => 2018/03/29
+                                                  [JalaliDate] => 1397/01/09
+                                                  [WeekDay] => پنج‌شنبه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 9
+                                                  [SystemKey] => X
+                                                  [FromTime] => 0615
+                                                  [ToTime] => 
+                                                  [IsEmpty] => 
+                                              )
+      
+                                          [2] => stdClass Object
+                                              (
+                                                  [AN] => 15853308
+                                                  [AL] => IV
+                                                  [Price] => 1398000
+                                                  [Price_CHD] => 1398000
+                                                  [Price_INF] => 600000
+                                                  [DepurtureDate] => 2018/03/30
+                                                  [JalaliDate] => 1397/01/10
+                                                  [WeekDay] => جمعه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 9
+                                                  [SystemKey] => R
+                                                  [FromTime] => 2015
+                                                  [ToTime] => 2125
+                                                  [IsEmpty] => 
+                                              )
+      
+                                          [3] => stdClass Object
+                                              (
+                                                  [AN] => 15936435
+                                                  [AL] => B9
+                                                  [Price] => 1198000
+                                                  [Price_CHD] => 1198000
+                                                  [Price_INF] => 598000
+                                                  [DepurtureDate] => 2018/03/31
+                                                  [JalaliDate] => 1397/01/11
+                                                  [WeekDay] => شنبه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 4
+                                                  [SystemKey] => X
+                                                  [FromTime] => 0740
+                                                  [ToTime] => 
+                                                  [IsEmpty] => 
+                                              )
+      
+                                          [4] => stdClass Object
+                                              (
+                                                  [AN] => 15625324
+                                                  [AL] => IV
+                                                  [Price] => 1098000
+                                                  [Price_CHD] => 1098000
+                                                  [Price_INF] => 398000
+                                                  [DepurtureDate] => 2018/04/01
+                                                  [JalaliDate] => 1397/01/12
+                                                  [WeekDay] => یک‌شنبه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 1
+                                                  [SystemKey] => S
+                                                  [FromTime] => 0545
+                                                  [ToTime] => 
+                                                  [IsEmpty] => 
+                                              )
+      
+                                          [5] => stdClass Object
+                                              (
+                                                  [AN] => 15272463
+                                                  [AL] => Y9
+                                                  [Price] => 1148000
+                                                  [Price_CHD] => 1148000
+                                                  [Price_INF] => 600000
+                                                  [DepurtureDate] => 2018/04/02
+                                                  [JalaliDate] => 1397/01/13
+                                                  [WeekDay] => دوشنبه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 3
+                                                  [SystemKey] => R
+                                                  [FromTime] => 1915
+                                                  [ToTime] => 2015
+                                                  [IsEmpty] => 
+                                              )
+      
+                                          [6] => stdClass Object
+                                              (
+                                                  [AN] => 15930570
+                                                  [AL] => B9
+                                                  [Price] => 1348000
+                                                  [Price_CHD] => 1348000
+                                                  [Price_INF] => 598000
+                                                  [DepurtureDate] => 2018/04/03
+                                                  [JalaliDate] => 1397/01/14
+                                                  [WeekDay] => سه‌شنبه
+                                                  [Route] => THRSYZ
+                                                  [Status] => 4
+                                                  [SystemKey] => X
+                                                  [FromTime] => 0750
+                                                  [ToTime] => 
+                                                  [IsEmpty] => 
+                                              )
+      
+                                      )
+      
+                              )
+      
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

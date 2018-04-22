@@ -1,0 +1,19 @@
+createdAt: "2018-03-27T13:22:13.541Z"
+updatedAt: "2018-03-27T13:23:13.216Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "html table"
+content: '''
+  # html table
+  
+  
+  ## set `tr` style on mouseover
+  ```html
+  <tr class="spy1xx" onmouseover="this.style.background='#002424'" onmouseout="this.style.background='#003333'" style="background: rgb(0, 51, 51);">
+  ```
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
