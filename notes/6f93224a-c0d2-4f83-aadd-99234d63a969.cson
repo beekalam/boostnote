@@ -1,0 +1,42 @@
+createdAt: "2018-04-22T18:51:58.740Z"
+updatedAt: "2018-04-22T18:52:38.811Z"
+type: "MARKDOWN_NOTE"
+folder: "4e6ec3c07b3c53796092"
+title: "api 724 sample output"
+content: '''
+  # api 724 sample output
+  ```json
+  (
+                              [ajency_online_ID] => 446
+                              [type] => system
+                              [price_final] => 1430000
+                              [price_final_chd] => 690000
+                              [price_final_inf] => 202000
+                              [price_final_fare] => 1150000
+                              [price_final_chd_fare] => 575000
+                              [price_final_inf_fare] => 115000
+                              [capacity] => 9
+                              [from] => thr
+                              [to] => awz
+                              [number_flight] => ZV4021
+                              [type_flight] => Economy
+                              [carrier] => Boeing MD
+                              [date_flight] => 2018-04-24
+                              [time_flight] => 15:15:00
+                              [airline] => Zagros
+                              [IATA_code] => ZV
+                              [cabinclass] => H
+                              [weelchairsupport] => YES
+                              [linktosite] => charter724.info/Result.html?t=YTo2OntzOjQ6ImRhdGUiO3M6MTA6IjIwMTgtMDQtMjQiO3M6NDoiZnJvbSI7aToxMDAwMDtzOjI6InRvIjtpOjEwMDA0O3M6Mzoic2VjIjtpOjAwMDA7czo2OiJzZWNrZXkiO2k6MDAwMDtzOjEzOiJudW1iZXJfZmxpZ2h0IjtzOjY6IlpWNDAyMSI7fQ==
+                              [fromShowName] => تهران
+                              [toShowName] => اهواز
+                              [airlinePersian] => زاگرس
+                              [flightDateFa] => 1397-2-4
+                              [type_fa] => سیستمی
+                              [uniqueKey] => ZV4021@446@system@thr@awz@ZV@H
+  ```
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,558 @@
+createdAt: "2018-04-23T02:57:26.957Z"
+updatedAt: "2018-04-23T02:57:29.721Z"
+type: "MARKDOWN_NOTE"
+folder: "2d318b1023a78a20fa3c"
+title: "setting simple event listener"
+content: '''
+  
+  ### setting simple event listener
+  ```java
+          mTrueButton = (Button)findViewById(R.id.true_button);
+          mTrueButton.setOnClickListener(new View.OnClickListener(){
+              @Override
+              public void onClick(View v){
+                  Toast.makeText(LoginActivity.this,
+                          R.string.correct_toast,
+                          Toast.LENGTH_SHORT).show();
+              }
+          });
+          mFalseButton = (Button) findViewById(R.id.false_button);
+          mFalseButton.setOnClickListener(new View.OnClickListener(){
+              @Override
+              public void onClick(View v){
+                  Toast.makeText(LoginActivity.this, R.string.incorrect_toast,Toast.LENGTH_SHORT).show();
+              }
+          });
+  ```
+  
+  ### set TextView text
+  
+  ```java
+  mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
+  int question = mQuestionBank[mCurrentIndex].getTxtResId();
+  mQuestionTextView.setText(question);
+  ```
+  
+  ### make a toast message
+  ```java
+  Toast.makeText(LoginActivity.this,
+  				R.string.correct_toast,
+                  Toast.LENGTH_SHORT).show();
+  ```
+  
+  ### referencing resources in XML
+  ```xml
+  <Button
+  	android:id="@+id/next_button"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="@string/next_button"
+  	android:drawableRight="@drawable/arrow_right"
+  	android:drawablePadding="4dp" />
+  ```
+  
+  ### ImageButton
+  #### sample 
+  ```xml
+  <ImageButton
+  android:id="@+id/next_button"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:src="@drawable/arrow_right"
+  />
+  ```
+  ### Overriding onSaveInstanceState(Bundle)
+  ```java
+  public class QuizActivity extends AppCompatActivity {
+  ...
+  @Override
+  protected void onPause() {
+  ...
+  }
+  @Override
+  public void onSaveInstanceState(Bundle savedInstanceState) {
+  	super.onSaveInstanceState(savedInstanceState);
+  	Log.i(TAG, "onSaveInstanceState");
+  	savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
+  }
+  @Override
+  protected void onStop() {
+  ...
+  }
+  ...
+  }
+  ```
+  
+  to restore values
+  
+  ```java
+  public class QuizActivity extends AppCompatActivity {
+  ...
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+  	super.onCreate(savedInstanceState);
+  	Log.d(TAG, "onCreate(Bundle) called");
+  	setContentView(R.layout.activity_quiz);
+  	if (savedInstanceState != null) {
+  	mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+  	}
+  ...
+  }
+  ...
+  }
+  ```
+  
+  ## intents
+  ### starting an activity
+  ```java
+  mCheatButton = (Button)findViewById(R.id.cheat_button);
+  mCheatButton.setOnClickListener(new View.OnClickListener() {
+  	@Override
+  	public void onClick(View v) {
+  	// Start CheatActivity
+  	Intent intent = new Intent(QuizActivity.this, CheatActivity.class);
+  		startActivity(intent);
+  	}
+  });
+  ```
+  ## fragments
+  ### Wiring widgets in a fragment
+  ```java
+  public class CrimeFragment extends Fragment {
+  private Crime mCrime;
+  private EditText mTitleField;
+  ...
+  @Override
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+  Bundle savedInstanceState) {
+  View v = inflater.inflate(R.layout.fragment_crime, container, false);
+  mTitleField = (EditText) v.findViewById(R.id.crime_title);
+  mTitleField.addTextChangedListener(new TextWatcher() {
+  @Override
+  public void beforeTextChanged(
+  CharSequence s, int start, int count, int after) {
+  // This space intentionally left blank
+  }
+  @Override
+  public void onTextChanged(
+  CharSequence s, int start, int before, int count) {
+  mCrime.setTitle(s.toString());
+  }
+  @Override
+  public void afterTextChanged(Editable s) {
+  // This one too
+  }
+  });
+  return v;
+  }
+  }
+  ```
+  
+  
+  ## spinner
+  ### bind ListView and Spinner control with String Array is
+  ```xml
+  android:entries = "@array/nameofarray"
+  ```
+  
+  ```xml
+  <Spinner
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/MainSpinner"
+          tools:listitem="@layout/support_simple_spinner_dropdown_item"
+          android:entries="@array/Convert_Type"/>
+  ```
+  
+  If you want to change the theme of each item of Spinner then put below style into res/values/styles.xml
+  
+  ```xml
+  <style name="ItemTextAppearance">
+      <item name="android:textColor">#f00</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:typeface">monospace</item>
+  </style>
+  ```
+  
+  and the set
+  ```
+  android:theme="@style/ItemTextAppearance"
+  ```
+  
+  ### selected item text values
+  ```java
+  Spinner spinner = (Spinner)findViewById(R.id.spinner);
+  String text = spinner.getSelectedItem().toString();
+  ```
+  
+  ## resources
+  In today’s tutorial we shall start off with Retrofit. 
+  We will be fetching list of employees by connecting to a service, which will provide employee data in JSON form and display 
+  it using RecyclerView and CardView. If your not familiar with using RecyclerView & CardView please check out the previous post on these topics. So let’s begin
+  
+  Step 1 : Add the following dependencies to your app level gradle
+  
+  ```xml
+  dependencies {
+      ...
+      compile "com.android.support:design:25.1.0"
+      compile "com.android.support:recyclerview-v7:25.1.0"
+      compile "com.android.support:cardview-v7:25.1.0"
+      //Retrofit Dependencies
+      compile 'com.squareup.retrofit2:retrofit:2.1.0'
+      compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+      ...
+  }
+  ```
+  
+  Step 2 : Add internet permission to Android Manifest.xml
+  
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="mathew.navjacinth.com.retrofitdemo">
+  
+      <!--Internet Permission-->
+      <uses-permission android:name="android.permission.INTERNET" />
+  
+      <application
+          android:allowBackup="true"
+          android:icon="@mipmap/ic_launcher"
+          android:label="@string/app_name"
+          android:supportsRtl="true"
+          android:theme="@style/AppTheme">
+          <activity android:name=".activity.MainActivity">
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+  
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+          </activity>
+      </application>
+  
+  </manifest>
+  ```
+  
+  Step 4 : The URL to get the JSON data is given below:
+  
+  http://navjacinth9.000webhostapp.com/json/retrofit-demo.php?company_no=123
+  
+  The JSON data retreived from this particular URL is as shown below:
+  
+  ```json
+  {
+      "employeeList": [
+          {
+              "name": "Gretchen Rodriquez",
+              "email": "gretchenrodriquez@trasola.com",
+              "phone": "6204732096"
+          },
+          {
+              "name": "Sharon Harris",
+              "email": "sharonharris@trasola.com",
+              "phone": "2184582386"
+          },
+          {
+              "name": "Serrano Haynes",
+              "email": "serranohaynes@trasola.com",
+              "phone": "1434162816"
+          },
+          {
+              "name": "Wagner Thornton",
+              "email": "wagnerthornton@trasola.com",
+              "phone": "5494622467"
+          },
+          {
+              "name": "Mooney Dawson",
+              "email": "mooneydawson@trasola.com",
+              "phone": "3894433413"
+          }
+      ]
+  }
+  ```
+  
+  By analysing of the above JSON response we can see that it contains a JSON array name ‘employeeList’ which in turn contains multiple JSON objects each of which hold employee details.
+  To recieve this JSON we will need two model classes one for the JSON Array and the other for each JSON object.
+  Add two new file inside your model subpackage ‘Employee.java’ and the other ‘EmployeeList.java’. The content for both the files is given below:
+  
+  ```java
+  public class Employee {
+      @SerializedName("name")
+      private String name;
+      @SerializedName("email")
+      private String email;
+      @SerializedName("phone")
+      private String phone;
+  
+      public Employee(String name, String email, String phone) {
+          this.name = name;
+          this.email = email;
+          this.phone = phone;
+      }
+  
+      public String getName() {
+          return name;
+      }
+  
+      public void setName(String name) {
+          this.name = name;
+      }
+  
+      public String getEmail() {
+          return email;
+      }
+  
+      public void setEmail(String email) {
+          this.email = email;
+      }
+  
+      public String getPhone() {
+          return phone;
+      }
+  
+      public void setPhone(String phone) {
+          this.phone = phone;
+      }
+  }
+  ```
+  
+  ```java
+  public class EmployeeList {
+      @SerializedName("employeeList")
+      private ArrayList<Employee> employeeList;
+  
+      public ArrayList<Employee> getEmployeeArrayList() {
+          return employeeList;
+      }
+  
+      public void setEmployeeArrayList(ArrayList<Employee> employeeArrayList) {
+          this.employeeList = employeeArrayList;
+      }
+  }
+  ```
+  
+  
+  Step 5 : Now create a new file in network package and name it “RetrofitInstance.java”. 
+  This file will provide the retrofit instance if it exists else it will create a new instance and return it.
+  
+  
+  
+  ```java
+  public class RetrofitInstance {
+  
+      private static Retrofit retrofit;
+      private static final String BASE_URL = "http://navjacinth9.000webhostapp.com/json/";
+  
+      public static Retrofit getRetrofitInstance() {
+          if (retrofit == null) {
+              retrofit = new retrofit2.Retrofit.Builder()
+                      .baseUrl(BASE_URL)
+                      .addConverterFactory(GsonConverterFactory.create())
+                      .build();
+          }
+          return retrofit;
+      }
+  }
+  ```
+  
+  Step 6 : Now add an interface into the same network package and name it “GetEmployeeDataService.java”.
+  In this file we will use the @GET annotation provided by Retrofit Library,
+   to which we will pass the end point or filename that will provide the JSON data.
+  Next we will create a method which will have return type of Call<Type>. In our case we will use the model class created earlier as type like Call<EmployeeList>.
+  We will also use the @Query annotation to attach the values sent to this method as url parameters in our case it’s company number. The contents of the file is given below
+  
+  
+  ```java
+  public interface GetEmployeeDataService {
+      @GET("retrofit-demo.php")
+      Call<EmployeeList> getEmployeeData(@Query("company_no") int companyNo);
+  }
+  ```
+  
+  Step 7 : Now we will create layout file that will be utilized by the adapter of the RecyclerView to generate each item in the list.
+  Add a new file to your ‘layout’ folder and give the filename as ‘row_employee.xml’. Add the following code to your file
+  
+  
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <!-- START*** Root Container *** -->
+  <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      card_view:cardCornerRadius="6dp"
+      card_view:cardElevation="3dp"
+      card_view:cardUseCompatPadding="true">
+  
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:orientation="vertical"
+          android:padding="5dp">
+  
+          <!-- TextView Employee Name -->
+          <TextView
+              android:id="@+id/txt_employee_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+  
+          <!-- TextView Employee Email -->
+          <TextView
+              android:id="@+id/txt_employee_email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+  
+          <!-- TextView Employee Phone -->
+          <TextView
+              android:id="@+id/txt_employee_phone"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+  
+      </LinearLayout>
+  
+  </android.support.v7.widget.CardView>
+      <!-- END*** Root Container *** -->
+  ```	
+  	
+  Step 8: We will now create the adapter that will be used by the RecyclerView to display list of employees.
+  Create a new java class in your adapter package and name it EmployeeAdapter.java	
+  
+  ```java
+  package mathew.navjacinth.com.retrofitdemo.adapter;
+  
+  import android.support.v7.widget.RecyclerView;
+  import android.view.LayoutInflater;
+  import android.view.View;
+  import android.view.ViewGroup;
+  import android.widget.TextView;
+  
+  import java.util.ArrayList;
+  
+  import mathew.navjacinth.com.retrofitdemo.R;
+  import mathew.navjacinth.com.retrofitdemo.model.Employee;
+  
+  /**
+   * Created by Navjacinth Mathew on 1/18/2017.
+   */
+  
+  public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.EmployeeViewHolder> {
+  
+      private ArrayList<Employee> dataList;
+  
+      public EmployeeAdapter(ArrayList<Employee> dataList) {
+          this.dataList = dataList;
+      }
+  
+      @Override
+      public EmployeeViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+          LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+          View view = layoutInflater.inflate(R.layout.row_employee, parent, false);
+          return new EmployeeViewHolder(view);
+      }
+  
+      @Override
+      public void onBindViewHolder(EmployeeViewHolder holder, int position) {
+          holder.txtEmpName.setText(dataList.get(position).getName());
+          holder.txtEmpEmail.setText(dataList.get(position).getEmail());
+          holder.txtEmpPhone.setText(dataList.get(position).getPhone());
+      }
+  
+      @Override
+      public int getItemCount() {
+          return dataList.size();
+      }
+  
+      class EmployeeViewHolder extends RecyclerView.ViewHolder {
+  
+          TextView txtEmpName, txtEmpEmail, txtEmpPhone;
+  
+          EmployeeViewHolder(View itemView) {
+              super(itemView);
+              txtEmpName = (TextView) itemView.findViewById(R.id.txt_employee_name);
+              txtEmpEmail = (TextView) itemView.findViewById(R.id.txt_employee_email);
+              txtEmpPhone = (TextView) itemView.findViewById(R.id.txt_employee_phone);
+          }
+      }
+  }
+  ```
+  
+  Step 9 : In the XML file activity_main.xml we will add the RecyclerView tag
+  
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/activity_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingBottom="@dimen/activity_vertical_margin"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/activity_vertical_margin"
+      tools:context="mathew.navjacinth.com.retrofitdemo.activity.MainActivity">
+  
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_view_employee_list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+  
+  </RelativeLayout>
+  ```
+  
+  
+  Step 10 : Now in the MainActivity.java we will make an asynchronous network request to fetch the employee data. 
+  The JSON response will be available within the onResponse method. In case the request fails the onFailure method will be called.
+   On request success we will then pass the ArrayList of Employee objects to the adapter to create a list.
+  
+   ```java
+   public class MainActivity extends AppCompatActivity {
+  
+      private EmployeeAdapter adapter;
+      private RecyclerView recyclerView;
+  
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.activity_main);
+  
+          /*Create handle for the RetrofitInstance interface*/
+          GetEmployeeDataService service = RetrofitInstance.getRetrofitInstance().create(GetEmployeeDataService.class);
+  
+          /*Call the method with parameter in the interface to get the employee data*/
+          Call<EmployeeList> call = service.getEmployeeData(100);
+  
+          /*Log the URL called*/
+          Log.wtf("URL Called", call.request().url() + "");
+  
+          call.enqueue(new Callback<EmployeeList>() {
+              @Override
+              public void onResponse(Call<EmployeeList> call, Response<EmployeeList> response) {
+                  generateEmployeeList(response.body().getEmployeeArrayList());
+              }
+  
+              @Override
+              public void onFailure(Call<EmployeeList> call, Throwable t) {
+                  Toast.makeText(MainActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+              }
+          });
+      }
+  
+      /*Method to generate List of employees using RecyclerView with custom adapter*/
+      private void generateEmployeeList(ArrayList<Employee> empDataList) {
+          recyclerView = (RecyclerView) findViewById(R.id.recycler_view_employee_list);
+  
+          adapter = new EmployeeAdapter(empDataList);
+  
+          RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+  
+          recyclerView.setLayoutManager(layoutManager);
+  
+          recyclerView.setAdapter(adapter);
+      }
+  }
+  ```
+'''
+tags: []
+isStarred: false
+isTrashed: false
